@@ -1,0 +1,7 @@
+lunwen-tex/*.pdf
+lunwen-tex/*.aux
+lunwen-tex/*.log
+lunwen-tex/*.out
+lunwen-tex/*/*.aux
+lunwen-tex/*/*.log
+lunwen-tex/*/*.out

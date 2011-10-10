@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99c (Web2C 2009)
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: body/chap00.aux
+A level-1 auxiliary file: body/chap01.aux
+A level-1 auxiliary file: body/chap02.aux
+A level-1 auxiliary file: body/chap03.aux
+A level-1 auxiliary file: body/conclusion.aux
+The style file: GBT7714-2005NLang-UTF8.bst
+A level-1 auxiliary file: appendix/publications.aux
+A level-1 auxiliary file: appendix/acknowledgements.aux
+new.block is an unknown function---line 73 of file GBT7714-2005NLang-UTF8.bst
+remove.dots is an unknown function---line 461 of file GBT7714-2005NLang-UTF8.bst
+remove.dots is an unknown function---line 514 of file GBT7714-2005NLang-UTF8.bst
+remove.dots is an unknown function---line 571 of file GBT7714-2005NLang-UTF8.bst
+remove.dots is an unknown function---line 616 of file GBT7714-2005NLang-UTF8.bst
+format.pages is an unknown function---line 1163 of file GBT7714-2005NLang-UTF8.bst
+format.pages is an unknown function---line 1194 of file GBT7714-2005NLang-UTF8.bst
+format.pages is an unknown function---line 1203 of file GBT7714-2005NLang-UTF8.bst
+format.pages is an unknown function---line 1233 of file GBT7714-2005NLang-UTF8.bst
+format.pages is an unknown function---line 1242 of file GBT7714-2005NLang-UTF8.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+*publisher is an unknown function---line 1929 of file GBT7714-2005NLang-UTF8.bst
+*　* is an unknown function---line 1938 of file GBT7714-2005NLang-UTF8.bst
+ouput is an unknown function---line 2064 of file GBT7714-2005NLang-UTF8.bst
+ouput is an unknown function---line 2068 of file GBT7714-2005NLang-UTF8.bst
+ouput is an unknown function---line 2102 of file GBT7714-2005NLang-UTF8.bst
+ouput is an unknown function---line 2105 of file GBT7714-2005NLang-UTF8.bst
+format.conference.title is an unknown function---line 2622 of file GBT7714-2005NLang-UTF8.bst
+format.cconference.title is an unknown function---line 2657 of file GBT7714-2005NLang-UTF8.bst
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: body/reference.bib
+You can't pop an empty literal stack for entry WANG00
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry WRH-SPLBOK94
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry GBT7714-2005
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You've used 3 entries,
+            6753 wiz_defined-function locations,
+            1219 strings with 8854 characters,
+and the built_in function-call counts, 794 in all, are:
+= -- 68
+> -- 25
+< -- 2
++ -- 15
+- -- 6
+* -- 45
+:= -- 132
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 6
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 34
+empty$ -- 90
+format.name$ -- 10
+if$ -- 182
+int.to.chr$ -- 1
+int.to.str$ -- 4
+missing$ -- 6
+newline$ -- 24
+num.names$ -- 6
+pop$ -- 15
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 32
+stack$ -- 0
+substring$ -- 6
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 0
+while$ -- 3
+width$ -- 0
+write$ -- 46
+(There were 21 error messages)
