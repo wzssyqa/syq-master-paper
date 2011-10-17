@@ -9,8 +9,10 @@ import numpy
 #两个末煤仓的沉降
 #使用全局变量，有点脏
 #定义在 genplot.py 文件中
-#mo1_cj=[]
-#mo2_cj=[]
+###沉降  #mo1_cj=[]  #mo2_cj=[]
+###装煤量 #mo1_load=[] #mo2_load=[]
+### 温度  #mo_tmp[]
+### 时间  #mo_day[]
 def do_fast_ica(pca_first):
 	mo1_cj_inverse = numpy.array(mo1_cj).T
 	mo2_cj_inverse = numpy.array(mo2_cj).T

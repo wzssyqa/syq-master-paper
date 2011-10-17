@@ -12,7 +12,23 @@ import linecache
 #使用全局变量，有点脏
 mo1_cj=[]
 mo2_cj=[]
+mo1_load=[]
+mo2_load=[]
+mo_day=[1]
+#历史平均气温,当日最高气温和最低气温的平均值
+#http://php.weather.sina.com.cn/
+mo_tmp=[-8, -8, -8.5, -9, -9.5, -9.5, -10,
+	    -9.5, -11, -9, -10, -10, -10, -11,
+		-8.5, -5.5, -4.5, 
+		-2.5, 0, 3,
+		6, 7, 9.5, 
+		11.5, 13.5, 
+		20, 
+		21.5, 22,
 
+		16.5, 12,
+		8, 4
+	]
 def plot_a_mc(pt,fom,to):
 	lfn='../level/'+pt[0][0]+'.csv'
 	hfn='../heavy/'+pt[0][0]+'.csv'
@@ -27,21 +43,11 @@ def plot_a_mc(pt,fom,to):
 	hv=string.split(linecache.getline(hfn,int(pt[0][1])+3),',')
 	
 	while compare_day(day[-1],to):
-		day.pop()
-		hv.pop()
-		lev1.pop()
-		lev2.pop()
-		lev3.pop()
-		lev4.pop()
+		map(list.pop, [day, hv, lev1, lev2, lev3, lev4])
 	
 	while compare_day(fom,day[0]):
-		day.pop(0)
-		hv.pop(0)
-		lev1.pop(0)
-		lev2.pop(0)
-		lev3.pop(0)
-		lev4.pop(0)
-
+		map(list.pop, [day, hv, lev1, lev2, lev3, lev4])	
+	
 	lth=len(day)
 	i=1
 	cj1=[0.0]
@@ -55,16 +61,15 @@ def plot_a_mc(pt,fom,to):
 		cj4.append(float(lev4[0])-float(lev4[i]))
 		i=i+1
 	
+	for i in range(1,lth-1):
+		mo_day.append(date_diff(day[0],day[i]))
+	
 	if pt[0]=='41':
-		mo1_cj.append(cj1)
-		mo1_cj.append(cj2)
-		mo1_cj.append(cj3)
-		mo1_cj.append(cj4)
+		mo1_cj.extend([cj1, cj2, cj3, cj4])
+		mo1_load=map(float,hv)
 	if pt[0]=='42':
-		mo2_cj.append(cj1)
-		mo2_cj.append(cj2)
-		mo2_cj.append(cj3)
-		mo2_cj.append(cj4)
+		mo2_cj.extend([cj1, cj2, cj3, cj4])
+		mo2_load=map(float,hv)
 	
 	tmpf=open('tmpf.tmp','w')
 	i=0
