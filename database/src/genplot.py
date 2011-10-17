@@ -14,14 +14,14 @@ mo1_cj=[]
 mo2_cj=[]
 mo1_load=[]
 mo2_load=[]
-mo_day=[1]
+mo_day=[0]
 #历史平均气温,当日最高气温和最低气温的平均值
 #http://php.weather.sina.com.cn/
 mo_tmp=[-8, -8, -8.5, -9, -9.5, -9.5, -10,
 	    -9.5, -11, -9, -10, -10, -10, -11,
 		-8.5, -5.5, -4.5, 
 		-2.5, 0, 3,
-		6, 7, 9.5, 
+		7, 9.5, 
 		11.5, 13.5, 
 		20, 
 		21.5, 22,
@@ -61,10 +61,9 @@ def plot_a_mc(pt,fom,to):
 		cj4.append(float(lev4[0])-float(lev4[i]))
 		i=i+1
 	
-	for i in range(1,lth-1):
-		mo_day.append(date_diff(day[0],day[i]))
-	
 	if pt[0]=='41':
+		for i in range(1,lth):
+			mo_day.append(date_diff(day[0],day[i]))
 		mo1_cj.extend([cj1, cj2, cj3, cj4])
 		mo1_load=map(float,hv)
 	if pt[0]=='42':
