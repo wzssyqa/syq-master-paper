@@ -6,4 +6,4 @@
 */*.out
 */*.pdf
 database/src/*.pyc
-database/src/plot/*
+database/src/plot/*.png
