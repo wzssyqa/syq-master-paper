@@ -70,7 +70,7 @@
 而高阶统计信息理论经过多年的发展，取得了很多有益的成果，但主要还
 停留在理论研究方面，工程实践应用还比较少。(?*?*?)
 
-\subsection{盲反卷积}
+\subsection{盲反卷积(***)}
 盲反卷积时仅利用系统的带噪输出对系统的输入进行重构，一般假定
 系统输入u(t)为独立、同分布、零均值序列，系统模型未知，系统的输出
 可以进行测量。
@@ -82,33 +82,46 @@
     更一般地，传感器测得的信号是源机器滤波和延迟的混叠信号的线性
 组合，通常称为卷积混叠。无噪声多通道卷积混叠信号的数学模型可以
 用下式表示：
-      x(t)=A(z)s(t)=sigm(正无穷->负无穷) A(k)s(t-k)
-式中，x(t)和s(t)同为瞬时混叠式；A(k)为未知滤波混叠矩阵，A(z)为
-其Z变换；观测信号x(t)是源信号s(t)通过A(k)的卷积混合，所以矩阵
-序列{A(k)}又称冲激响应。
-    现有的多通道盲反卷积方法大都是仅通过观测信号x(t)估计通道
-冲击响应{A(k)}，进而恢复源信号。我们可以直接给出盲反卷积(盲均衡)
+\begin{equation} 
+\bm{x}(t)=\bm{A}(z)\bm{s}(t) = 
+\sum^\infty_{k=-\infty}\bm{A}(k)\bm{s}(t-k)
+\end{equation}
+式中，$\bm{x}(t)$和$\bm{s}(t)$同为瞬时混叠式；$\bm{A}(k)$为未知滤波混叠矩阵，
+$\bm{A}(z)$为其Z变换；观测信号$\bm{x}(t)$是源信号$\bm{s}(t)$通过$\bm{A}(k)$的卷积混合，
+所以矩阵序列$\{\bm{A}(k)\}$又称冲激响应。
+    
+	现有的多通道盲反卷积方法大都是仅通过观测信号$\bm{x}(t)$估计通道
+冲击响应$\{\bm{A}(k)\}$，进而恢复源信号。我们可以直接给出盲反卷积(盲均衡)
 模型：
-      y(t)=sigm(k 负无穷->正无穷)W(k)x(t-k)=W(z)x(t)
-其中，y(t)为均衡输出矢量；W(z)称为均衡器，W(k)为均衡器系数矩阵。
+\begin{equation}
+\bm{y}(t) = \sum^\infty_{k=-\infty}\bm{W}(k)\bm{x}(t-k)=\bm{W}(z)\bm{x}(t)
+\end{equation}
+其中，$\bm{y}(t)$为均衡输出矢量；$\bm{W}(z)$称为均衡器，$\bm{W}(k)$为均衡器系数矩阵。
 
 实际进行盲反卷积的算法有：
-
-\paragraph*{H-J算法的扩展}
+\paragraph*{H-J算法的扩展(***)}
 这类算法是瞬时混叠盲源分离H-J网络训练算法的直接推广。针对反馈
 分离网络和卷积混叠模型，卷积混叠信号的反馈分离网络输出为
-    xxxxxxxxxxxxxxxxxxxxxxxxxxx
-	Platt和Faggin为这类网络确定了用来进行优化的理论准则————最小
+\begin{equation}
+\bm{y}(t)=\bm{x}-\sum^{L}_{k=0}\bm{W}(k)\bm{y}(t-k)
+\end{equation}
+
+Platt和Faggin为这类网络确定了用来进行优化的理论准则————最小
 输出功率原理，即当独立分量得以分离，则信号的功率达到最小，由此
 利用梯度下降法得到该网络的训练公式，它恰好是H-J算法的推广，公式为：
-          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-\paragraph*{累积量算法的扩展}
+\begin{equation}
+\Delta\omega_{ij}(k)=a y_i(t)y_j(t)
+\end{equation}
+\paragraph*{累积量算法的扩展(***)}
 这是一种基于互累积两消失的自适应盲反卷积算法。该算法利用了
 盲源分离的经验公式，直接将盲源分离的情况扩展到盲反卷积。公式在形式
-上和扩展的H-J方法类似，而H-J公式中的非现行函数用四阶互累积量xxxx
-xxxxxxxxxxxxx代替，训练公式为：
-     xxxxxxxxxxxxxxxxxxxxxx
-\paragraph*{信息理论算法扩展}
+上和扩展的H-J方法类似，而H-J公式中的非现行函数用四阶互累积量
+$c_{31}(y_i^3(t)y_j(t))$ 和 $c_{31}(y_i(t)y_j^3(t))$
+代替，训练公式为：
+\begin{equation}
+\Delta\omega_{ij}(k)=-ac_{31}(y_i(t)y_j(t-k))
+\end{equation}
+\paragraph*{信息理论算法扩展(***)}
 对瞬时混叠信号模型，Infomax方法是较成功的盲源分离方法之一。
 Torkkola将Infomax算法推广到卷积混叠的情况，得到了一个局部训练
 算法(仅有两个源的情况)。该算法通过因果滤波器最大化输出熵最小化
@@ -116,15 +129,20 @@ Torkkola将Infomax算法推广到卷积混叠的情况，得到了一个局部�
 零延迟权系数，直接滤波非零延迟权系数和反馈交叉滤波权系数的训练
 公式。而对于更一般的卷积混叠情况，Lee给出了反卷积系统滤波器权系数
 的公式：
-    xxxxxxxxxxxx
-	xxxxxxxxxxxx
-	Lambert在他的博士论文中，发展了FIR滤波器多项式代数理论，
+\begin{eqnarray}
+\Delta\bm{W}(0)	= \alpha [\bm{(I+uy^T)W}(0)] \\
+\Delta\bm{W}(k)	= \beta [\bm{uy^T}(t-k)\bm{W}(k)]
+\end{eqnarray}
+Lambert在他的博士论文中，发展了FIR滤波器多项式代数理论，
 并通过仿真实例表明该理论是解决多通道盲源分离的一种有效工具。
 应用FIR多项式矩阵代数的基本思路是扩展标量矩阵代数到时域的
 滤波器矩阵代数(或频域的多项式矩阵)。利用这一理论可以得到频域
 扩展的Infomax算法：
-      xxxxxxxxxxxxxxxxxxxxxx
-其中，H表示复共轭，W为滤波器矩阵，X和u为频率域多传感器信号块。
+\begin{eqnarray}
+\Delta\bm{W} = \alpha [\bm{W}^{-H}+FFT(\bm{u})\bm{X}^H]
+\end{eqnarray}
+其中，$H$表示复共轭，$\bm{W}$为滤波器矩阵，$\bm{X}$和$\bm{u}$
+为频率域多传感器信号块。
 
 \subsection{盲源分离}
 所谓盲信号分离，亦即盲源分离，是在没有关于混合矩阵的任何先验
