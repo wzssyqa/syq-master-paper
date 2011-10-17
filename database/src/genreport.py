@@ -163,18 +163,4 @@ def gen_all_report():
 			gen_report(pt[0],pt[i],ahf,False)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	

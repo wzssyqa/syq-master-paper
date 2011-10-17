@@ -8,6 +8,10 @@ from meic import *
 
 import linecache
 
+#两个末煤仓的沉降
+#使用全局变量，有点脏
+mo1_cj=[]
+mo2_cj=[]
 
 def plot_a_mc(pt,fom,to):
 	lfn='../level/'+pt[0][0]+'.csv'
@@ -51,7 +55,17 @@ def plot_a_mc(pt,fom,to):
 		cj4.append(float(lev4[0])-float(lev4[i]))
 		i=i+1
 	
-
+	if pt[0]=='41':
+		mo1_cj.append(cj1)
+		mo1_cj.append(cj2)
+		mo1_cj.append(cj3)
+		mo1_cj.append(cj4)
+	if pt[0]=='42':
+		mo2_cj.append(cj1)
+		mo2_cj.append(cj2)
+		mo2_cj.append(cj3)
+		mo2_cj.append(cj4)
+	
 	tmpf=open('tmpf.tmp','w')
 	i=0
 	while i<lth:
