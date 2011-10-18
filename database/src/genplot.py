@@ -5,7 +5,7 @@ import datetime
 import string
 import os
 from meic import *
-
+import copy
 import linecache
 
 #两个末煤仓的沉降
@@ -34,7 +34,7 @@ def plot_a_mc(pt,fom,to):
 	hfn='../heavy/'+pt[0][0]+'.csv'
 
 	day=string.split(linecache.getline(lfn,1),',')
-	
+
 	lev1=string.split(linecache.getline(lfn,int(pt[1])+1),',')
 	lev2=string.split(linecache.getline(lfn,int(pt[2])+1),',')
 	lev3=string.split(linecache.getline(lfn,int(pt[3])+1),',')
@@ -44,10 +44,14 @@ def plot_a_mc(pt,fom,to):
 	
 	while compare_day(day[-1],to):
 		map(list.pop, [day, hv, lev1, lev2, lev3, lev4])
-	
 	while compare_day(fom,day[0]):
-		map(list.pop, [day, hv, lev1, lev2, lev3, lev4])	
-	
+		day.pop(0)
+		hv.pop(0)
+		lev1.pop(0)
+		lev2.pop(0)
+		lev3.pop(0)
+		lev4.pop(0)
+
 	lth=len(day)
 	i=1
 	cj1=[0.0]
@@ -65,11 +69,11 @@ def plot_a_mc(pt,fom,to):
 		for i in range(1,lth):
 			mo_day.append(date_diff(day[0],day[i]))
 		mo1_cj.extend([cj1, cj2, cj3, cj4])
-		mo1_load=map(float,hv)
+		mo1_load.extend(map(float,hv))
 	if pt[0]=='42':
 		mo2_cj.extend([cj1, cj2, cj3, cj4])
-		mo2_load=map(float,hv)
-	
+		mo2_load.extend(map(float,hv))
+
 	tmpf=open('tmpf.tmp','w')
 	i=0
 	while i<lth:
@@ -78,7 +82,7 @@ def plot_a_mc(pt,fom,to):
 	tmpf.close()
 
 	pcf=open('cmd.plot','w')
-	pcf.write('set term png font \'/usr/share/fonts/truetype/simsun.ttc,10\' size 1280,800\n')
+	pcf.write('set term png font \'/usr/share/adobe/simsun.ttc,10\' size 1280,800\n')
 	pcf.write('set output '+'"./plot/'+pt[0]+'.png"\n')
 	pcf.write('set size 1,1\n')
 	pcf.write('set grid\n')

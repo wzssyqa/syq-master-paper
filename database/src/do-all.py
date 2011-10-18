@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 import mdp
+import mutinfo
 from genreport import *
 from genplot import *
 from genpaper import *
@@ -31,19 +32,17 @@ def compute_pearsonr(raw, icaed):
 ## raw 和 icaed 都是一列为一个组数据的矩阵
 	i=0; j=0
 	raw_here=raw.T
-	print raw_here
 	icaed_here=icaed.T
 	pearson_value=[]
-	raw_len,xxxx=raw_here.shape
+	mutinfo_value=[]
 	icaed_len,xxxx=icaed_here.shape
-	while i<raw_len:
-		pearson_value.append([])
-		while j<icaed_len:
-			tmp,tmp_tmp=scipy.stats.pearsonr(raw_here[i], icaed_here[j])
-			pearson_value[i].append(tmp)
-			j=j+1
-		i=i+1
-	return pearson_value
+	while j<icaed_len:
+		tmp,tmp_tmp=scipy.stats.pearsonr(raw_here, icaed_here[j])
+		pearson_value.append(tmp)
+		tmp=mutinfo.nmi(raw_here,icaed_here[j])
+		mutinfo_value.append(tmp)
+		j=j+1
+	return pearson_value, mutinfo_value
 	
 #gen_report('11','7','./dd.html',False)
 
@@ -54,15 +53,34 @@ gen_paper(argv[1],argv[2])
 mo1_pca,mo2_pca=do_fast_ica(True)
 mo1_ica,mo2_ica=do_fast_ica(False)
 
-mo1_raw_vs_pca=compute_pearsonr(numpy.array(mo1_cj).T, mo1_pca)
-mo2_raw_vs_pca=compute_pearsonr(numpy.array(mo2_cj).T, mo2_pca)
-mo1_raw_vs_ica=compute_pearsonr(numpy.array(mo1_cj).T, mo1_ica)
-mo2_raw_vs_ica=compute_pearsonr(numpy.array(mo2_cj).T, mo2_ica)
+mo1_tmp_vs_pca=compute_pearsonr(numpy.array(mo_tmp).T, mo1_pca)
+mo2_tmp_vs_pca=compute_pearsonr(numpy.array(mo_tmp).T, mo2_pca)
+mo1_tmp_vs_ica=compute_pearsonr(numpy.array(mo_tmp).T, mo1_ica)
+mo2_tmp_vs_ica=compute_pearsonr(numpy.array(mo_tmp).T, mo2_ica)
 
-mo1_tmp_vs_pca=compute_pearsonr(numpy.array([mo_tmp]).T, mo1_pca)
-mo2_tmp_vs_pca=compute_pearsonr(numpy.array([mo_tmp]).T, mo2_pca)
-mo1_day_vs_ica=compute_pearsonr(numpy.array([mo_day]).T, mo1_ica)
-mo2_day_vs_ica=compute_pearsonr(numpy.array([mo_day]).T, mo2_ica)
-print mo1_raw_vs_pca
+mo1_day_vs_pca=compute_pearsonr(numpy.array(mo_day).T, mo1_pca)
+mo2_day_vs_pca=compute_pearsonr(numpy.array(mo_day).T, mo2_pca)
+mo1_day_vs_ica=compute_pearsonr(numpy.array(mo_day).T, mo1_ica)
+mo2_day_vs_ica=compute_pearsonr(numpy.array(mo_day).T, mo2_ica)
+
+mo1_load_vs_pca=compute_pearsonr(numpy.array(mo1_load).T, mo1_pca)
+mo2_load_vs_pca=compute_pearsonr(numpy.array(mo2_load).T, mo2_pca)
+mo1_load_vs_ica=compute_pearsonr(numpy.array(mo1_load).T, mo1_ica)
+mo2_load_vs_ica=compute_pearsonr(numpy.array(mo2_load).T, mo2_ica)
+
+print 'tmp VS PCA'
+print mo1_tmp_vs_pca, mo2_tmp_vs_pca
+print 'tmp VS ICA'
+print mo1_tmp_vs_ica, mo2_tmp_vs_ica
+
+print 'day VS PCA'
+print mo1_day_vs_pca, mo2_day_vs_pca
+print 'day VS ICA'
+print mo1_day_vs_ica, mo2_day_vs_ica
+
+print 'load VS PCA'
+print mo1_load_vs_pca, mo2_load_vs_pca
+print 'load VS ICA'
+print mo1_load_vs_ica, mo2_load_vs_ica
 
 

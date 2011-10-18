@@ -1,4 +1,4 @@
-set term png font '/usr/share/fonts/truetype/simsun.ttc,10' size 1280,800
+set term png font '/usr/share/adobe/simsun.ttc,10' size 1280,800
 set output "./plot/42.png"
 set size 1,1
 set grid
