@@ -202,7 +202,8 @@ x^{(0)} \quad \xleftrightarrow[m-IAGO]{m-AGO} \quad x^{(m)}
 由于关联度分析是按发展趋势作分析，因而对样本量的大小没有太高的要求，
 分析时也不需要典型的跟不规律，而且分析的结果一般与定性分析相吻合，
 具有广泛的实用价值。
-\paragraph*{1. 构造灰关联因子集}
+
+\subsubsection*{1. 构造灰关联因子集}
 对抽象系统进行关联分析时，首先要确定表征系统特征的数据列。
 表征系统有直接法和间接法两种。
 直接法指对直接能得到反映系统行为特征的序列，可直接进行灰关联分析；
@@ -247,7 +248,7 @@ x_i'(k)=\frac{x_i(k)-\min\min X}{\max\max X - \min\min X}
 x'(k)=x(k)+2|X_{\min}|, \quad (k=1,2, \cdots, n)
 \end{equation}
 
-\paragraph*{2. 灰关联度的计算公式}
+\subsubsection*{2. 灰关联度的计算公式} 
 设$x_0=\{x_0(k)|k=1,2, \cdots ,n\}$为参考序列；
 $x_i=\{x_i(k)|k=1,2, \cdots ,n\}$为比较序列。则有如下定义：
 
@@ -265,33 +266,71 @@ $x_i(k)$与$x_0(k)$的关联系数为：
 \begin{equation}
 \xi_i=\{\xi_i(k)|k=1,2,\cdots,n\}
 \end{equation}
-则关联度定义为：
+则灰关联度定义为：
 \begin{equation}
 \gamma_i=\gamma(x_0,x_i)=\frac{1}{n}\sum_{k=1}^{n}\xi_i(k)
 \end{equation}
 灰关联度具有如下特性： \\
 1) 规范性
-\\
+\begin{gather}
+0 < \gamma(x_0,x_i) \le 1 \notag \\
+\gamma(x_0,x_i) = 1 \Leftrightarrow x_0=x_i \\
+\gamma(x_0,x_i) = 0 \Leftrightarrow x_i,x_0 \in \varnothing \notag
+\end{gather}
 2) 偶对称性
-\\   
-3) 整体性
-   若//，则一般地有
-\\  
-4) 接近性
-   //越小，则//越大，即//与//越接近。
+\begin{equation}
+\gamma(x,y)=\gamma(y,x), x,y \in x
+\end{equation}
+3) 整体性 \\ 
+若$x_i(i=1,2,\cdots,m) m \ge 3$ ，则一般地有
+\begin{equation}
+\gamma(x_i,x_j) \neq \gamma(x_j, y_i),\quad i\neq j,\quad i,j=1,2,\cdots,n
+\end{equation}
+4) 接近性 \\
+$\Delta_i(k)=|x_0(k)-x_i(k)|$越小，则$\gamma(x_0,x_i)$越大，
+即$x_0$与$x_i$越接近。
+\\
 
-从上述灰关联度的性质（3）可以看出，灰关联度一般不满足对称性，
+从上述灰关联度的性质(3)可以看出，
+灰关联度一般不满足对称性，
 于是便有了如下满足对称性的灰关联度计算公式：\\
-   ①改进关联度法
+①改进关联度法
+\begin{equation}
+r_{ij}=\frac{1}{2(n-1)} \left[
+\frac{x_i(i)\wedge x_j(1)}{x_i(1) \vee x_j(i)}+
+\frac{x_i(n)\wedge x_j(n)}{x_i(n) \vee x_j(n)}+
+2\sum_{k=2}^{n-1}\frac{x_i(k)\wedge x_j(k)}{x_i(k)\vee x_j(k)}
+\right]
+\end{equation}
+②相对变率关联度法
+\begin{equation}
+r_{ij}=\frac{1}{n-1}\sum_{k=1}^{n-1} \frac{1}{1+|
+\frac{\Delta x_j(k)}{x_j(k)}-\frac{\Delta x_i(k)}{x_i(k)}|}
+\end{equation}
+式中，$\Delta x_j(k)=x_j(k+1)-x_j(k), \Delta x_i(k)=x_i(k+1)-x_i(k)$ \\
+③斜率关联度法
+\begin{equation}
+r_{ij}=\frac{1}{n-1}\sum_{k=1}^{n-1} \frac{1}{1+|
+\frac{\Delta x_j(k)}{\sigma_{x_j}}-\frac{\Delta x_i(k)}{\sigma_{x_i}}|}
+\end{equation}
+式中，
+\begin{gather}
+\sigma_{x_j}=\sqrt{\frac{1}{n-1}\sum_{k=1}^{n}(x_j(k)-\bar{x}_j)^2}
+\qquad ; \qquad \bar{x}_j=\frac{1}{n} \sum_{k=1}^{n} x_j(k)  \notag \\
+\sigma_{x_i}=\sqrt{\frac{1}{n-1}\sum_{k=1}^{n}(x_i(k)-\bar{x}_i)^2}
+\qquad ; \qquad \bar{x}_i=\frac{1}{n} \sum_{k=1}^{n} x_i(k)  \notag 
+\end{gather}
    
-   ②相对变率关联度法
-  
-   ③斜率关联度法
-  
-   
-   
-   3. 关联序
-   设参考序列//与比较序列//，其关联度分别为//，按关联度大小排序即为关联序。
-   在灰关联分析中，关联序的大小体现了比较因子对参考因子的影响及作用的大小，其意义高于关联度本身的大小。
-   需要指出的是，在关联度的分析中，数列的处理方法不同，关联度的大小会发生变化，但关联序一般是不会发生变化的。
-也就是说，关联度的大小只是因子之间相互影响、相互作用的外在表现，而关联序才是其实质。
+\subsubsection*{3. 关联序}
+设参考序列$x_0$与比较序列$x_i (i=1,2,\cdots,m)$，
+其关联度分别为$\gamma_i(i=1,2,\cdots,m)$ ，
+按关联度大小排序即为关联序。
+
+在灰关联分析中，关联序的大小体现了比较因子对参考因子的影响及作用的大小，
+其意义高于关联度本身的大小。
+
+需要指出的是，在关联度的分析中，数列的处理方法不同，
+关联度的大小会发生变化，但关联序一般是不会发生变化的。
+也就是说，关联度的大小只是因子之间相互影响、相互作用的外在表现，
+而关联序才是其实质。
+
