@@ -1,13 +1,14 @@
-This is BibTeX, Version 0.99c (Web2C 2009)
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: main.aux
+A level-1 auxiliary file: appendix/acknowledgements.aux
 A level-1 auxiliary file: body/chap00.aux
 A level-1 auxiliary file: body/chap01.aux
 A level-1 auxiliary file: body/chap02.aux
 A level-1 auxiliary file: body/chap03.aux
+A level-1 auxiliary file: body/chap04.aux
 A level-1 auxiliary file: body/conclusion.aux
 The style file: GBT7714-2005NLang-UTF8.bst
 A level-1 auxiliary file: appendix/publications.aux
-A level-1 auxiliary file: appendix/acknowledgements.aux
 new.block is an unknown function---line 73 of file GBT7714-2005NLang-UTF8.bst
 remove.dots is an unknown function---line 461 of file GBT7714-2005NLang-UTF8.bst
 remove.dots is an unknown function---line 514 of file GBT7714-2005NLang-UTF8.bst
@@ -29,51 +30,58 @@ format.conference.title is an unknown function---line 2622 of file GBT7714-2005N
 format.cconference.title is an unknown function---line 2657 of file GBT7714-2005NLang-UTF8.bst
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: body/reference.bib
-You can't pop an empty literal stack for entry WANG00
+I was expecting a `,' or a `}'---line 48 of file body/reference.bib
+ :   
+ :   language=   {c},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry DEFORM03
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
-You can't pop an empty literal stack for entry WRH-SPLBOK94
+You can't pop an empty literal stack for entry AAPO01
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
-You can't pop an empty literal stack for entry GBT7714-2005
+You can't pop an empty literal stack for entry DEFOR07
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
-You've used 3 entries,
+You can't pop an empty literal stack for entry BSS06
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You've used 5 entries,
             6753 wiz_defined-function locations,
-            1219 strings with 8854 characters,
-and the built_in function-call counts, 794 in all, are:
-= -- 68
-> -- 25
-< -- 2
-+ -- 15
-- -- 6
-* -- 45
-:= -- 132
-add.period$ -- 10
-call.type$ -- 3
-change.case$ -- 6
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 34
-empty$ -- 90
-format.name$ -- 10
-if$ -- 182
+            1234 strings with 9006 characters,
+and the built_in function-call counts, 1535 in all, are:
+= -- 121
+> -- 60
+< -- 1
++ -- 33
+- -- 14
+* -- 96
+:= -- 229
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 10
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 70
+empty$ -- 197
+format.name$ -- 23
+if$ -- 370
 int.to.chr$ -- 1
-int.to.str$ -- 4
-missing$ -- 6
-newline$ -- 24
-num.names$ -- 6
-pop$ -- 15
+int.to.str$ -- 6
+missing$ -- 10
+newline$ -- 33
+num.names$ -- 10
+pop$ -- 46
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 5
 quote$ -- 0
-skip$ -- 32
+skip$ -- 68
 stack$ -- 0
-substring$ -- 6
-swap$ -- 3
+substring$ -- 10
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 0
-while$ -- 3
+while$ -- 5
 width$ -- 0
-write$ -- 46
-(There were 21 error messages)
+write$ -- 71
+(There were 23 error messages)

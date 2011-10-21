@@ -20,7 +20,7 @@
 同时为了在生产、加工、运输、销售等环节间进行有效的缓存，共建设了10个煤仓。
 其中有原煤仓两个，矸石仓两个、块煤仓4个、末煤仓2个。
 下图(\ref{figure:xiaoguotu})即为该煤矿的效果图。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.7]{xiaoguotu.jpg}
    \bicaption[figure:xiaoguotu]{厂区效果图}{厂区效果图}
@@ -103,28 +103,28 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 对于闭合差、前后视距差等参数的要求严格参考国家二等水准测量的规范要求，
 但是并不进行往返测量，
 对于其它一些确有困难且并不是特别重要的参数也可以适当放宽要求。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{level2requirement1.jpeg}
    \bicaption[figure:error-per-km]{每千米中误差要求}{每千米中误差要求}
 								{Fig.}{Error per KM}
 \end{figure}
 
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{level2requirement2.jpeg}
    \bicaption[figure:line-of-sight]{视线和重复测量要求}{视线和重复测量要求}
 						{Fig.}{Line of sight and repeated measurements}
 \end{figure}
 
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{level2requirement3.jpeg}
    \bicaption[figure:b-a-part]{基辅分划读数限差}{基辅分划读数限差}
 								{Fig.}{Basic and auxiliary partition}
 \end{figure}
 
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{level2requirement4.jpeg}
    \bicaption[figure:go-return]{往返高差不符值、环闭合差、检测高差之差的要求}{往返高差不符值、环闭合差、检测高差之差的要求}
@@ -156,7 +156,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 第三行为数据计算者姓名，
 第四行及以下为各个煤仓的装载量(装载量占总装载能力的百分比)。
 每个字段均不加引号。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{4-heavy-csv.png}
    \bicaption[figure:4-heavy]{装载量文本数据库格式}{装载量文本数据格式}
@@ -164,7 +164,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 \end{figure}
 
 高程观测值文件的格式同样也是逗号分隔的文本文件，其格式为：第一行是观测日期，从第二行起是煤仓上各沉降点的高程观测值。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{4-level-csv.png}
    \bicaption[figure:4-level]{高程值数据文件格式}{高程值数据文件格式}
@@ -179,7 +179,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 点号文件存储了每个煤仓上沉降点的信息。
 第一列是煤仓类型的编号，依次为一号原煤仓、二号原煤仓、一号矸石仓等。
 第二列及后面各列是每个煤仓上沉降点的编号。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{static-csv.png}
    \bicaption[figure:static-csv]{点号数据库格式}{点号数据库格式}
@@ -192,7 +192,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 
 单点沉降值表，包括序号、时间、本次下沉、累积下沉、高程、
 载荷、观测者、计算者、备注共10项。这个表格的每一行表示一次观测。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{42-7-all.png}
    \bicaption[figure:set-for-single]{单点沉降报表}{单点沉降报表}
@@ -201,7 +201,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 
 \newpage
 煤仓各点高程表，总结煤仓上各点的高程观测值。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{42-new-level.png}
    \bicaption[figure:level-for-bunker]{煤仓上各点高程观测值}
@@ -210,7 +210,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 \end{figure}
 
 煤仓各点沉降表，总结煤仓上各点的沉降值。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{42-settle.png}
    \bicaption[figure:level-for-bunker]{煤仓上各点沉降量}
@@ -221,7 +221,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 
 沉降观测阶段总结表模板，根据命令行参数，生成需要提交的阶段总结模板，
 经过适当的修改后，提交给委托方。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.5]{4-paper.png}
    \bicaption[figure:paper]{阶段总结模板}
@@ -231,7 +231,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 
 沉降曲线图，横轴为从开始测量至最后一次测量的天数；
 纵轴正方向为装载量，负方向为各点沉降量。
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.3]{41-plot.png}
    \bicaption[figure:plot-41]{一号末煤仓沉降曲线图}
@@ -239,7 +239,7 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 			{Fig.}{Curves for settlement fof Powder Bulker No.1}
 \end{figure}
 
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.3]{42-plot.png}
    \bicaption[figure:plot-42]{二号末煤仓沉降曲线图}
@@ -312,7 +312,7 @@ fastica(x)
 观测值的图形见图(\ref{figure:plot-41})和(\ref{figure:plot-42})。
 
 %一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像：
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.3]{41-ica-plot.png}
    \bicaption[figure:plot-41-ica]{一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
@@ -321,7 +321,7 @@ fastica(x)
 \end{figure}
 
 %二号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像：
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.3]{42-ica-plot.png}
    \bicaption[figure:plot-42-ica]{二号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
@@ -356,7 +356,7 @@ pca(x, input_dim=4, output_dim=3)
 观测值的图形见图(\ref{figure:plot-41})和(\ref{figure:plot-42})
 
 %一号末煤仓使用PCA+FastICA后得到的四个独立分量及装载量、气温的图像：
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.3]{41-pca-plot.png}
    \bicaption[figure:plot-41-pca]{一号末煤仓PCA降维后使用FastICA后得到的四个独立分量及装载量、气温的图像}
@@ -365,7 +365,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{figure}
 
 %二号末煤仓使用PCA+FastICA后得到的四个独立分量及装载量、气温的图像：
-\begin{figure}[!htbp]
+\begin{figure}[!h]
    \centering
    \includegraphics[scale=0.3]{42-pca-plot.png}
    \bicaption[figure:plot-42-pca]{二号末煤仓PCA降维后使用FastICA后得到的四个独立分量及装载量、气温的图像}
@@ -379,7 +379,7 @@ pca(x, input_dim=4, output_dim=3)
 同时采用Pearson相关系数、互信息、灰关联度作为度量。
 
 %直接FastICA后得到四个独立成分和煤仓装载量之间的相关度量 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{直接使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
 			{直接使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
@@ -397,7 +397,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{center}
 \end{table}
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{直接使用FastICA得到的独立成分与装载量之间的关系(二号末煤仓)}
 			{直接使用FastICA得到的独立成分与装载量之间的关系(二号末煤仓)}
@@ -416,7 +416,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{table}
 
 %直接FastICA后得到四个独立成分和气温之间的相关度量
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{直接使用FastICA得到的独立成分与气温之间的关系(一号末煤仓)}
 		{直接使用FastICA得到的独立成分与气温之间的关系(一号末煤仓)}
@@ -434,7 +434,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{center}
 \end{table}
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{直接使用FastICA得到的独立成分与气温之间的关系(二号末煤仓)}
 		{直接使用FastICA得到的独立成分与气温之间的关系(二号末煤仓)}
@@ -453,7 +453,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{table}
 
 %直接FastICA后得到四个独立成分和时间之间的相关度量
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{直接使用FastICA得到的独立成分与时间之间的关系(一号末煤仓)}
 		{直接使用FastICA得到的独立成分与时间之间的关系(一号末煤仓)}
@@ -471,7 +471,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{center}
 \end{table}
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{直接使用FastICA得到的独立成分与时间之间的关系(二号末煤仓)}
 		{直接使用FastICA得到的独立成分与时间之间的关系(二号末煤仓)}
@@ -490,7 +490,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{table}
 
 %首先使用PCA降维再使用FastICA后得到三个独立成分和煤仓装载量之间的相关度量
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{PCA降维后使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
 		{PCA降维后使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
@@ -507,7 +507,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{center}
 \end{table}
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{PCA降维后使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
 		{PCA降维后使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
@@ -525,7 +525,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{table}
 
 %首先使用PCA降维再使用FastICA后得到三个独立成分和气温之间的相关度量
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{PCA降维后使用FastICA得到的独立成分与气温之间的关系(一号末煤仓)}
 			{PCA降维后使用FastICA得到的独立成分与气温之间的关系(一号末煤仓)}
@@ -542,7 +542,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{center}
 \end{table}
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{PCA降维后使用FastICA得到的独立成分与气温之间的关系(二号末煤仓)}
 			{PCA降维后使用FastICA得到的独立成分与气温之间的关系(二号末煤仓)}
@@ -561,7 +561,7 @@ pca(x, input_dim=4, output_dim=3)
 
 
 %首先使用PCA降维再使用FastICA后得到三个独立成分和时间之间的相关度量
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{PCA降维后使用FastICA得到的独立成分与时间之间的关系(一号末煤仓)}
 		{PCA降维后使用FastICA得到的独立成分与时间之间的关系(一号末煤仓)}
@@ -578,7 +578,7 @@ pca(x, input_dim=4, output_dim=3)
 \end{center}
 \end{table}
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{center}
 \bicaption{PCA降维后使用FastICA得到的独立成分与时间之间的关系(二号末煤仓)}
 		{PCA降维后使用FastICA得到的独立成分与时间之间的关系(二号末煤仓)}

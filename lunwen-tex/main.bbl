@@ -1,26 +1,33 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[{K. Reckdahl~原著, 王磊~译}(2000)]{WANG00}
-{K. Reckdahl~原著, 王磊~译}.
-\newblock
-\newblock Using Import graphics in {\LaTeX 2$\varepsilon$}, {\LaTeX
-  2$\varepsilon$}插图指南[H].[出版地不详]：[出版者不详], 2000.
+\bibitem[黄声享~等(2006)]{DEFORM03}
+黄声享, 尹晖, 蒋征.
+\newblock 变形监测数据处理[M].
+\newblock 武汉: 武汉大学出版社, 2006.
 
-\bibitem[王仁宏~等(1994)]{WRH-SPLBOK94}
-王仁宏, 施锡泉, 罗钟铉,等.
-\newblock 多元样条函数及其应用[M].
-\newblock 北京: 科学出版社, 1994.
+\bibitem[Hyvärinen~等(2001)]{AAPO01}
+HYVäRINEN A, KARHUNEN J, OJA E.
+\newblock Independent Component Analysis[M].
+\newblock U.S.: John Wiley \& Sons, Inc., 2001.
 
-\bibitem[吴凯(2006)]{GBT7714-2005}
-吴凯.
-\newblock GBT7714-2005.bst：利用{Bib\TeX}生成符合GB/T
-  7714-2005的参考文献[H].
-\newblock
-\newblock 1.0 $\beta$3.[出版地不详]：[出版者不详], 2006.
+\bibitem[WikiPedia(2006)]{PEARSON}
+WIKIPEDIA.
+\newblock 相关[M].
+\newblock WikiPedia: http://zh.wikipedia.org/wiki/相关, 2006.
+
+\bibitem[张正禄~等(2007)]{DEFOR07}
+张正禄, 黄全义, 文鸿雁,等.
+\newblock 工程的变形监测分析与预报[M].
+\newblock 北京: 测绘出版社, 2007.
+
+\bibitem[张发启~等(2006)]{BSS06}
+张发启, 张斌, 张喜斌.
+\newblock 盲信号处理及应用[M].
+\newblock 西安: 西安电子科技大学出版社, 2006.
 
 \end{thebibliography}
