@@ -1,7 +1,7 @@
-﻿% !TEX TS-program = XeLaTeX
+% !TEX TS-program = XeLaTeX
 % !TEX encoding = UTF-8 Unicode
 
-\chapter{工程实例}
+\chapter{工程应用}
 
 \label{chap04}
 
@@ -234,13 +234,380 @@ $± 0.00$以上$0.5m$左右的外墙上较合适，这样观测时立尺、观�
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.3]{41-plot.png}
-   \bicaption[figure:plot]{沉降去线图}
-				    {沉降曲线图}
-			{Fig.}{Curves for settlement}
+   \bicaption[figure:plot-41]{一号末煤仓沉降曲线图}
+				    {一号末煤仓沉降曲线图}
+			{Fig.}{Curves for settlement fof Powder Bulker No.1}
+\end{figure}
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[scale=0.3]{42-plot.png}
+   \bicaption[figure:plot-42]{二号末煤仓沉降曲线图}
+				    {二号末煤仓沉降曲线图}
+			{Fig.}{Curves for settlement of Powder Bulker No.2}
+\end{figure}
+
+\section{FastICA}
+FastICA是一种流行的高效的独立成分分析算法，
+是赫尔辛基理工大学的Aapo Hyvärinen发明。
+该算法基于定点迭代方法，并以最大非高斯性作为统计独立性标准。
+FastICA也可以导出相应的牛顿迭代方法。
+
+其中一个单元的FastICA算法为(Wikipedia ***)：\\
+	1. 选择初始向量$W$ \\
+	2. 令 $\bm{w}^{+} \quad \leftarrow 
+			\quad E\{\bm{x}g(\bm{w^Tx})\} - E\{g'(w^Tx)\}w$ \\
+	3. 令 $\bm{w} \quad \leftarrow \quad 
+			\bm{w}^{+}/||\bm{w}^{+}||$ \\
+	4. 如果未达到收敛要求，继续第2步 \\
+此迭代算法求使数据$X$的投影达到最大高斯性的权向量W的方向。
+函数$g()$是一个非二次的非线性函数的导数。
+例如$g(t)$可是是$f(t)=t^4$的导数。
+
+赫尔辛基理工大学信息和计算机科学实验室的研究人员
+基于Matlab和GNU Octave开发了官方FastICA实现，
+拥有易用的图形界面和计算功能强大的算法。
+除此之外还有R语言、C++、Python等语言的实现。
+
+MDP(Modular toolkit for Data Processing)是
+一个基于Python的数据处理框架，
+提供了丰富强大的数据处理功能，其中就包括FastICA和PCA。
+本文即使用了MDP。
+
+使用FastICA对一组数据进行分析的方法一般有两种：
+直接使用FastICA算法，得到和原始数据同样数量的独立成分；
+也可以首先使用主成分分析(PCA)对数据进行降维处理，
+再使用FastICA进行分析。   
+
+为了评估应用独立成分分析的效果，
+可以使用Pearson相关系数、互信息和灰关联度作为评价指标。
+计算得到的各独立成分与疑为影响因子之间的
+Pearson相关系数、互信息和灰关联度，
+根据这些关联性指标分析分离效果以及各种因素对煤仓沉降的影响。
+
+\subsection{直接使用FastICA}
+以末煤仓为例，将煤仓上4个点的观测序列分别作为原始信号，
+直接使用MDP中的fastica函数进行分析，得出4个独立成分。
+
+MDP中fastica函数原型是：
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily]
+fastica(x, **kwargs)
+\end{lstlisting}
+其中的$x$为输入的原始信号，$kwargs$是在分离时使用的参数。\\
+可以使用的参数及其默认值为
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily]
+approach='defl', g='pow3', guess=None, fine_g='pow3', mu=1, 
+stabilization=False, sample_size=1, fine_tanh=1, fine_gaus=1,
+max_it=1000, max_it_fine=100, failures=5, limit=0.001, 
+verbose=False, whitened=False, white_comp=None, white_parm=None,
+input_dim=None, dtype=None
+\end{lstlisting}
+具体每个参数的定义请参考MDP的相应文档(***)。
+
+该处直接使用默认参数，即：
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily]
+fastica(x)
+\end{lstlisting}
+如下图像为，使用FastICA之后，根据得到的数据得到的，
+观测值的图形见图(\ref{figure:plot-41})和(\ref{figure:plot-42})。
+
+%一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像：
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[scale=0.3]{41-ica-plot.png}
+   \bicaption[figure:plot-41-ica]{一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
+				    {一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
+			{Fig.}{Four IC, Loadage and Temperature for Powder Bulker No.1}
+\end{figure}
+
+%二号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像：
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[scale=0.3]{42-ica-plot.png}
+   \bicaption[figure:plot-42-ica]{二号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
+				    {二号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
+			{Fig.}{Four IC, Loadage and Temperature for Powder Bulker No.2}
 \end{figure}
 
 
-\section{FastICA}
-\subsection{直接使用FastICA}
 \subsection{首先使用PCA降维再应用FastICA}
-\subsection{两种方法的对比}
+MDP中也带了pca函数，可以用来对信号进行降维。
+pca函数的原型是：
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily]
+pca(x, **kwargs)
+\end{lstlisting}
+其中，$x$是需要进行主成分分析的信号，
+$kwargs$是传递给pca函数的参数，
+其可用的参数及其默认值有：
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily]
+input_dim=None, output_dim=None, dtype=None, svd=False, 
+reduce=False, var_rel=1e-12, var_abs=1e-15, var_part=None
+\end{lstlisting}
+关于具体的使用说明，请参考MDP的文档。
+这里我们需要指定输入和输出的信号的维数：
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily]
+pca(x, input_dim=4, output_dim=3)
+\end{lstlisting}
+此处我们设定输入的信号维数为4，输出的为3，
+以和可能的影响因素的个数相同。
+使用PCA对原始信号降维之后，再使用fastica函数获取独立分量。
+
+以下对PCA降维后获得的数据使用fastica之后，画出的图像。
+观测值的图形见图(\ref{figure:plot-41})和(\ref{figure:plot-42})
+
+%一号末煤仓使用PCA+FastICA后得到的四个独立分量及装载量、气温的图像：
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[scale=0.3]{41-pca-plot.png}
+   \bicaption[figure:plot-41-pca]{一号末煤仓PCA降维后使用FastICA后得到的四个独立分量及装载量、气温的图像}
+				    {一号末煤仓使用PCA降维FastICA后得到的四个独立分量及装载量、气温的图像}
+			{Fig.}{Four IC(With PCA first), Loadage and Temperature for Powder Bulker No.1}
+\end{figure}
+
+%二号末煤仓使用PCA+FastICA后得到的四个独立分量及装载量、气温的图像：
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[scale=0.3]{42-pca-plot.png}
+   \bicaption[figure:plot-42-pca]{二号末煤仓PCA降维后使用FastICA后得到的四个独立分量及装载量、气温的图像}
+				    {二号末煤仓使用PCA降维FastICA后得到的四个独立分量及装载量、气温的图像}
+			{Fig.}{Four IC(With PCA first), Loadage and Temperature for Powder Bulker No.2}
+\end{figure}
+
+\subsection{各影响因子与所得独立成分的关系}
+在根据fastica或者PCA之后的FastICA得到独立成分之后，
+为了评估各个独立成分与煤仓装载量、温度变化、经历时间的相互关系，
+同时采用Pearson相关系数、互信息、灰关联度作为度量。
+
+%直接FastICA后得到四个独立成分和煤仓装载量之间的相关度量 
+\begin{table}[!htb]
+\begin{center}
+\bicaption{直接使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
+			{直接使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
+			{Table.}{Relationship between Loadage and ICs from FastICA directly, No.1 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                		& 相关系数     				& 互信息      					&灰关联度 \\
+\midrule
+  独立成分1     	&  0.31045550206419115       	& 0.94230515613664989   	&    \\
+  独立成分2     	&  nan          					& 3.493152145488611e-15   	&    \\
+  独立成分3     	&  0.63203026974852217      	& 0.94230515613664989		&    \\
+  独立成分4     	&  -0.13494294423250519    	& 0.9423051561366498		&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!htb]
+\begin{center}
+\bicaption{直接使用FastICA得到的独立成分与装载量之间的关系(二号末煤仓)}
+			{直接使用FastICA得到的独立成分与装载量之间的关系(二号末煤仓)}
+			{Table.}{Relationship between Loadage and ICs from FastICA directly, No.2 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                		& 相关系数     				& 互信息      					&灰关联度 \\
+\midrule
+  独立成分1     	&  -0.0098565966362569018  	& 0.97325847231868035   	&    \\
+  独立成分2     	&  0.64991952670167907		& 0.97325847231868035   	&    \\
+  独立成分3     	&  0.27993093051194867      	& 0.9732584723186803		&    \\
+  独立成分4     	&  -0.048345889699784657    	& 0.97325847231868035		&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+%直接FastICA后得到四个独立成分和气温之间的相关度量
+\begin{table}[!htb]
+\begin{center}
+\bicaption{直接使用FastICA得到的独立成分与气温之间的关系(一号末煤仓)}
+		{直接使用FastICA得到的独立成分与气温之间的关系(一号末煤仓)}
+			{Table.}{Relationship between Temperature and ICs from FastICA directly, No.1 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                & 相关系数     						& 互信息      						&灰关联度 \\
+\midrule
+  独立成分1     &  -0.79715083668276143     	& 0.92753315430712713			&    \\
+  独立成分2     &  nan							& 3.3089362752306921e-15		&    \\
+  独立成分3     &  -0.0046455198649242432		& 0.92753315430712824 			&    \\
+  独立成分4     &  -0.12419823845502126		& 0.92753315430712857 			&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!htb]
+\begin{center}
+\bicaption{直接使用FastICA得到的独立成分与气温之间的关系(二号末煤仓)}
+		{直接使用FastICA得到的独立成分与气温之间的关系(二号末煤仓)}
+			{Table.}{Relationship between Temperature and ICs from FastICA directly, No.2 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                & 相关系数     						& 互信息      						&灰关联度 \\
+\midrule
+  独立成分1     &  0.33269827762973381	     	& 0.92753315430712879			&    \\
+  独立成分2     &  -0.11181095960366073		& 0.92753315430712746			&    \\
+  独立成分3     &  0.84894488520244671		& 0.9275331543071224 			&    \\
+  独立成分4     &  0.046542855465477796		& 0.92753315430712779			&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+%直接FastICA后得到四个独立成分和时间之间的相关度量
+\begin{table}[!htb]
+\begin{center}
+\bicaption{直接使用FastICA得到的独立成分与时间之间的关系(一号末煤仓)}
+		{直接使用FastICA得到的独立成分与时间之间的关系(一号末煤仓)}
+			{Table.}{Relationship between Days and ICs from FastICA directly, No.1 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                		& 相关系数     					& 互信息      					&灰关联度 \\
+\midrule
+  独立成分1     	&  -0.67039265728626118     		& 0.99999999999824107   	&    \\
+  独立成分2     	&  nan          						& 4.0089740251131844e-15   	&    \\
+  独立成分3     	&  -0.26336501825181907      		& 0.99999999999824218   	&    \\
+  独立成分4     	&  -0.23270816025544519      		& 0.99999999999824252  	&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!htb]
+\begin{center}
+\bicaption{直接使用FastICA得到的独立成分与时间之间的关系(二号末煤仓)}
+		{直接使用FastICA得到的独立成分与时间之间的关系(二号末煤仓)}
+			{Table.}{Relationship between Days and ICs from FastICA directly, No.2 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                		& 相关系数     					& 互信息      					&灰关联度 \\
+\midrule
+  独立成分1     	&  0.51625222015459338     		& 0.99999999999824285   	&    \\
+  独立成分2     	&  -0.28080031928822285		& 0.99999999999824141   	&    \\
+  独立成分3     	&  0.68571871171874499      		& 0.99999999999824307   	&    \\
+  独立成分4     	&  -0.113386396661022      		& 0.99999999999824196  	&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+%首先使用PCA降维再使用FastICA后得到三个独立成分和煤仓装载量之间的相关度量
+\begin{table}[!htb]
+\begin{center}
+\bicaption{PCA降维后使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
+		{PCA降维后使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
+			{Table.}{Relationship between Loadage and ICs from FastICA after PCA, No.1 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                		& 相关系数     					& 互信息      						&灰关联度 \\
+\midrule
+  独立成分1     	&  0.2635564858132709     		& 0.94230515613664989   		&    \\
+  独立成分2     	&  0.3483940146795545			& 0.94230515613664989  		&    \\
+  独立成分3     	&  0.62976934113327743			& 0.94230515613664989			&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!htb]
+\begin{center}
+\bicaption{PCA降维后使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
+		{PCA降维后使用FastICA得到的独立成分与装载量之间的关系(一号末煤仓)}
+			{Table.}{Relationship between Loadage and ICs from FastICA after PCA, No.1 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                		& 相关系数     					& 互信息      						&灰关联度 \\
+\midrule
+  独立成分1     	&  0.25118155055662922     		& 0.97325847231868035   		&    \\
+  独立成分2     	&  -0.36213168393230483		& 0.97325847231868035  		&    \\
+  独立成分3     	&  -0.35052673089969216		& 0.97325847231868035			&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+%首先使用PCA降维再使用FastICA后得到三个独立成分和气温之间的相关度量
+\begin{table}[!htb]
+\begin{center}
+\bicaption{PCA降维后使用FastICA得到的独立成分与气温之间的关系(一号末煤仓)}
+			{PCA降维后使用FastICA得到的独立成分与气温之间的关系(一号末煤仓)}
+			{Table.}{Relationship between Days and ICs from FastICA after PCA, No.1 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                & 相关系数     				& 互信息      			&灰关联度 \\
+\midrule
+  独立成分1     &  -0.82599874780257931		& 0.92753315430712724   &     \\
+  独立成分2     &  0.028941710801729584		& 0.92753315430712802   &     \\
+  独立成分3     &  0.063245341965641827		& 0.92753315430712824   &      \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!htb]
+\begin{center}
+\bicaption{PCA降维后使用FastICA得到的独立成分与气温之间的关系(二号末煤仓)}
+			{PCA降维后使用FastICA得到的独立成分与气温之间的关系(二号末煤仓)}
+			{Table.}{Relationship between Days and ICs from FastICA after PCA, No.2 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                & 相关系数     				& 互信息      			&灰关联度 \\
+\midrule
+  独立成分1     &  -0.07804130719348294		& 0.92753315430712802	&    \\
+  独立成分2     &  -0.85050833400604609		& 0.92753315430712802	&    \\
+  独立成分3     &  -0.048183316293294788		& 0.92753315430712902	&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+
+%首先使用PCA降维再使用FastICA后得到三个独立成分和时间之间的相关度量
+\begin{table}[!htb]
+\begin{center}
+\bicaption{PCA降维后使用FastICA得到的独立成分与时间之间的关系(一号末煤仓)}
+		{PCA降维后使用FastICA得到的独立成分与时间之间的关系(一号末煤仓)}
+			{Table.}{Relationship between Days and ICs from FastICA after PCA, No.1 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                & 相关系数     					& 互信息      					&灰关联度 \\
+\midrule
+  独立成分1     &  -0.68223727564185688  	& 0.9999999999982413   		&    \\
+  独立成分2     &  -0.2629624823357441	      	& 0.99999999999824196   	&    \\
+  独立成分3     &  -0.090631387884062373	& 0.99999999999824218   	&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!htb]
+\begin{center}
+\bicaption{PCA降维后使用FastICA得到的独立成分与时间之间的关系(二号末煤仓)}
+		{PCA降维后使用FastICA得到的独立成分与时间之间的关系(二号末煤仓)}
+			{Table.}{Relationship between Days and ICs from FastICA after PCA, No.1 of Powder Bulker}
+\begin{tabular}{lccclccc}
+\toprule
+                & 相关系数     					& 互信息      					&灰关联度 \\
+\midrule
+  独立成分1     &  -0.38708135633534102  	& 0.99999999999824218 		&    \\
+  独立成分2     &  -0.7471217157090686	      	& 0.99999999999824218   	&    \\
+  独立成分3     &  0.042564507273735043	& 0.99999999999824329   	&    \\
+ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{对以上结果的分析}
+综合分析以上的图形和表格，我们可以看到：
+得到的独立成分总是会有一个成分与装载量关系密切，而与气温、时间关系并不大。
+这也说明了此煤仓是稳定的。
+
+
+
+
+
+
+
+
+
+
+
+
