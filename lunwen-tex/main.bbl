@@ -1,14 +1,9 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[黄声享~等(2006)]{DEFORM03}
-黄声享, 尹晖, 蒋征.
-\newblock 变形监测数据处理[M].
-\newblock 武汉: 武汉大学出版社, 2006.
 
 \bibitem[Hyvärinen~等(2001)]{AAPO01}
 HYVäRINEN A, KARHUNEN J, OJA E.
@@ -20,14 +15,61 @@ WIKIPEDIA.
 \newblock 相关[M].
 \newblock WikiPedia: http://zh.wikipedia.org/wiki/相关, 2006.
 
+\bibitem[黄声享~等(2006)]{DEFORM03}
+黄声享, 尹晖, 蒋征.
+\newblock 变形监测数据处理[M].
+\newblock 武汉: 武汉大学出版社, 2006.
+
 \bibitem[张正禄~等(2007)]{DEFOR07}
 张正禄, 黄全义, 文鸿雁,等.
 \newblock 工程的变形监测分析与预报[M].
 \newblock 北京: 测绘出版社, 2007.
 
+\bibitem[Adam(1981)]{Chrzanowski-compare}
+ADAM C.
+\newblock A Comparison of Different Approaches into the Analysis of Deformation
+  Measurements[J].
+\newblock FIG-XVI Congress, 1981(8):602.
+
+\bibitem[汪树玉 et al.(1998)]{BAYESIAN-DAM}
+汪树玉, 刘国华, 刘立军.
+\newblock 大坝监测分析中的贝叶斯动态模型[J].
+\newblock 水利学报, 1998(7):1.
+
+\bibitem[李征航 et al.(2000)]{GEHEYAN}
+李征航, 吴云孙, 李振洪, et al.
+\newblock 隔河岩大坝外观变形数据的处理和分析[J].
+\newblock 武汉测绘科技大学学报, 2000(6):3.
+
+\bibitem[岳建平 and 雷伟刚(2001)]{DAM-K-BASE}
+岳建平, 雷伟刚.
+\newblock
+  基于规则与人工神经网络的大坝安全监控混合知识库研究[%
+J].
+\newblock 水利学报, 2001(5):4.
+
+\bibitem[Nie~等(2010)]{DENOISING-WAVELET}
+NIE C~Y, WANG Z~W, YI-SHENG L,等.
+\newblock Research about non-stationary properties and de-noising of chaos
+  signals[J].
+\newblock 2010 International Conference on Computer, Mechatronics, Control and
+  Electronic Engineering, CMCE 2010, 2010, 3:77 -- 80.
+
+\bibitem[崔健 and 罗建平(2011)]{BULKER-WALL}
+崔健, 罗建平.
+\newblock 圆形煤仓仓壁的设计[J].
+\newblock 中国新技术新产品, 2011.
+
 \bibitem[张发启~等(2006)]{BSS06}
 张发启, 张斌, 张喜斌.
 \newblock 盲信号处理及应用[M].
 \newblock 西安: 西安电子科技大学出版社, 2006.
+
+\bibitem[Park~等(2003)]{OVERSAMPLED-ICA}
+PARK H~M, OH S~H, LEE S~Y.
+\newblock A uniform oversampled filter bank approach to independent component
+  analysis[J].
+\newblock Proceedings of 2003 International Conference on Neural Networks and
+  Signal Processing, ICNNSP'03, 2003, 2:1354 -- 1357.
 
 \end{thebibliography}

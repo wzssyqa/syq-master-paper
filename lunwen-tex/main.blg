@@ -30,58 +30,86 @@ format.conference.title is an unknown function---line 2622 of file GBT7714-2005N
 format.cconference.title is an unknown function---line 2657 of file GBT7714-2005NLang-UTF8.bst
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: body/reference.bib
-I was expecting a `,' or a `}'---line 48 of file body/reference.bib
+I was expecting a `,' or a `}'---line 39 of file body/reference.bib
  :   
  :   language=   {c},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You can't pop an empty literal stack for entry DEFORM03
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
 You can't pop an empty literal stack for entry AAPO01
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry DEFORM03
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
 You can't pop an empty literal stack for entry DEFOR07
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+Warning--there's a number but no volume in Chrzanowski-compare
+You can't pop an empty literal stack for entry Chrzanowski-compare
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry Chrzanowski-compare
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+Warning--there's a number but no volume in BAYESIAN-DAM
+You can't pop an empty literal stack for entry BAYESIAN-DAM
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry BAYESIAN-DAM
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+Warning--there's a number but no volume in GEHEYAN
+You can't pop an empty literal stack for entry GEHEYAN
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry GEHEYAN
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+Warning--there's a number but no volume in DAM-K-BASE
+You can't pop an empty literal stack for entry DAM-K-BASE
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry DAM-K-BASE
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry DENOISING-WAVELET
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry BULKER-WALL
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You can't pop an empty literal stack for entry BULKER-WALL
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
 You can't pop an empty literal stack for entry BSS06
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
-You've used 5 entries,
+You can't pop an empty literal stack for entry OVERSAMPLED-ICA
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+You've used 12 entries,
             6753 wiz_defined-function locations,
-            1234 strings with 9006 characters,
-and the built_in function-call counts, 1535 in all, are:
-= -- 121
-> -- 60
-< -- 1
-+ -- 33
-- -- 14
-* -- 96
-:= -- 229
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 10
-chr.to.int$ -- 5
-cite$ -- 5
-duplicate$ -- 70
-empty$ -- 197
-format.name$ -- 23
-if$ -- 370
+            1288 strings with 10285 characters,
+and the built_in function-call counts, 3876 in all, are:
+= -- 330
+> -- 142
+< -- 4
++ -- 78
+- -- 33
+* -- 265
+:= -- 568
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 24
+chr.to.int$ -- 12
+cite$ -- 16
+duplicate$ -- 187
+empty$ -- 468
+format.name$ -- 59
+if$ -- 918
 int.to.chr$ -- 1
-int.to.str$ -- 6
-missing$ -- 10
-newline$ -- 33
-num.names$ -- 10
-pop$ -- 46
+int.to.str$ -- 13
+missing$ -- 17
+newline$ -- 68
+num.names$ -- 24
+pop$ -- 95
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 12
 quote$ -- 0
-skip$ -- 68
+skip$ -- 156
 stack$ -- 0
-substring$ -- 10
-swap$ -- 5
+substring$ -- 96
+swap$ -- 12
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 10
-warning$ -- 0
-while$ -- 5
+type$ -- 38
+warning$ -- 4
+while$ -- 18
 width$ -- 0
-write$ -- 71
-(There were 23 error messages)
+write$ -- 169
+(There were 35 error messages)
