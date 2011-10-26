@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 import mdp
 import mutinfo
+import grey
+import gentextable
 from genreport import *
 from genplot import *
 from genpaper import *
@@ -43,7 +45,8 @@ def compute_pearsonr(raw, icaed):
 		tmp=mutinfo.nmi(raw_here,icaed_here[j])
 		mutinfo_value.append(tmp)
 		j=j+1
-	return pearson_value, mutinfo_value
+	grey_value=grey.grey(raw_here, icaed_here)
+	return pearson_value, mutinfo_value, grey_value.tolist()
 	
 #gen_report('11','7','./dd.html',False)
 
@@ -105,6 +108,15 @@ mo1_load_vs_pca=compute_pearsonr(numpy.array(mo1_load).T, mo1_pca)
 mo2_load_vs_pca=compute_pearsonr(numpy.array(mo2_load).T, mo2_pca)
 mo1_load_vs_ica=compute_pearsonr(numpy.array(mo1_load).T, mo1_ica)
 mo2_load_vs_ica=compute_pearsonr(numpy.array(mo2_load).T, mo2_ica)
+
+gentextable.gen_ica_tables(mo1_tmp_vs_ica, mo2_tmp_vs_ica, 
+		mo1_day_vs_ica, mo2_day_vs_ica, 
+		mo1_load_vs_ica, mo2_load_vs_ica
+	)
+gentextable.gen_pca_tables(mo1_tmp_vs_pca, mo2_tmp_vs_pca, 
+		mo1_day_vs_pca, mo2_day_vs_pca, 
+		mo1_load_vs_pca, mo2_load_vs_pca
+		)
 
 print 'tmp VS PCA'
 print mo1_tmp_vs_pca, mo2_tmp_vs_pca
