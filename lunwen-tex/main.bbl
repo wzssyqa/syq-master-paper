@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,11 +25,128 @@ WIKIPEDIA.
 \newblock 工程的变形监测分析与预报[M].
 \newblock 北京: 测绘出版社, 2007.
 
+\bibitem[李仲(2010)]{LIZHONG-CAMEAR}
+李仲.
+\newblock 地面摄影测量在井架变形监测中的应用研究[J].
+\newblock 测绘科学, 2010, 35:4.
+
+\bibitem[沈庆雄(2009)]{SHEN-QINGXIONG-CAMEAR}
+沈庆雄.
+\newblock 工程摄影测量中交向摄影的精度分析[J].
+\newblock 测绘科学, 2009, 34:3.
+
+\bibitem[顾峰华~等(2005)]{GU-GAO-QIU-CAMEAR}
+顾峰华, 高井祥, 仇春平.
+\newblock
+  近景摄影测量监测小变形体的误差分析与精度评定[J].
+\newblock 矿山测量, 2005:4.
+
+\bibitem[卢成静~等(2007)]{LU-HUANG-LI-CAMEAR}
+卢成静, 黄桂平, 李广云.
+\newblock 数字摄影测量用于天线热变形测量的精度测试[J].
+\newblock 测绘通报, 2007:3.
+
+\bibitem[Rieke-Zapp~等(2009)]{RTP-CAMEAR}
+RIEKE-ZAPP D, TECKLENBURG W, PEIPE J,等.
+\newblock Evaluation of the geometric stability and the accuracy potential of
+  digital cameras - Comparing mechanical stabilisation versus
+  parameterisation[J].
+\newblock ISPRS Journal of Photogrammetry and Remote Sensing, 2009, 64(3):248
+  -- 258.
+\newblock \url{http://dx.doi.org/10.1016/j.isprsjprs.2008.09.010}.
+\newblock Absolute length measurements;Accuracy assessment;Calibration
+  procedures;Calibration process;Camera calibration;Close-range
+  photogrammetries;Geometric instabilities;Geometric stability;Image
+  invariants;Interior orientations;Measuring systems;Mechanical
+  fixations;Object spaces;Parameter models;Parameterisation;Sensor
+  domains;Small groups;Software products;Stabilisation;Standard
+  calibrations;Standard methods;.
+
+\bibitem[刘大文和吴鹏举(2010)]{LIU-WU-LEVEL}
+刘大文, 吴鹏举.
+\newblock
+\newblock
+  利用连续倒垂线加双金属标代替正垂线及高程传递仪的探�%
+��[C]//全国大坝安全监测技术信息网第七届全网大会暨2010年�%
+��术交流研讨会论文集.
+\newblock .[出版地不详]：[出版者不详], 2010.
+
+\bibitem[何晓业~等(2007)]{HE-XIAOYE-STATIC}
+何晓业, 黄开席, 陈森玉,等.
+\newblock 一种用于高能加速器高程监测的静力水准系统[J].
+\newblock 核技术, 2007, 30:5.
+
+\bibitem[林勤(2001)]{LINQIN-STATIC}
+林勤.
+\newblock 水口大坝液体静力水准监测系统改造及运行情况[J].
+\newblock 大坝观测与土工测试, 2001, 25:2.
+
+\bibitem[胡勇~等(2004)]{HUWHH-SCANNER}
+胡勇, 王从军, 韩明,等.
+\newblock 基于计算机视觉的三维激光扫描测量系统[J].
+\newblock 华中科技大学学报(自然科学版), 2004, 32:3.
+
+\bibitem[徐进军~等(2010)]{XUWANG-SCANNER}
+徐进军, 王海城, 罗喻真,等.
+\newblock 基于三维激光扫描的滑坡变形监测与数据处理[J].
+\newblock 岩土力学, 2010, 31.
+
+\bibitem[贵慧宏~等(2010)]{GUIZHCH-GEOROBOT}
+贵慧宏, 张锦, 陈永剑.
+\newblock
+  基于GTS901A的测量机器人变形监测自动化软件的开发[J].
+\newblock 测绘科学, 2010, 35.
+
+\bibitem[韩贤权~等(2010)]{HANLI-LEVELBOT}
+韩贤权, 李端有, 谭勇,等.
+\newblock
+  数字水准仪自动化监测系统在大坝变形监测中的应用[J].
+\newblock 测绘科学, 2010, 35.
+
+\bibitem[冯俊德~等(2009)]{FENG-LI-TRANS}
+冯俊德, 李建国, 胡明鉴,等.
+\newblock 岩土工程数码监测无线传输方法及其装置[J].
+\newblock 岩土力学, 2009, 30:5.
+
 \bibitem[Adam(1981)]{Chrzanowski-compare}
 ADAM C.
 \newblock A Comparison of Different Approaches into the Analysis of Deformation
   Measurements[J].
 \newblock FIG-XVI Congress, 1981(8):602.
+
+\bibitem[Wu和Wu(2002)]{2002287011810}
+WU C~S, WU A~Y~A.
+\newblock A novel cost-effective multi-path adaptive interpolated FIR
+  (IFIR)-based echo canceller[C]//.
+\newblock Phoenix, AZ, United states:[出版者不详], 2002，第5卷:V/453 --
+  V/456.
+\newblock \url{http://dx.doi.org/10.1109/ISCAS.2002.1010738}.
+\newblock Echo canceller;Image compress filter;.
+
+\bibitem[尹晖和张琰(1997)]{YINHUI-GREY}
+尹晖, 张琰.
+\newblock
+\newblock
+  多因子关联分析模型及其同步预测的新方法[C]//'97工程测�%
+�综合性学术研讨会论文集.
+\newblock .[出版地不详]：[出版者不详], 1997.
+
+\bibitem[马丽霞~等(2009)]{MAWANG-BP}
+马丽霞, 王凤艳, 陈剑平.
+\newblock
+  基于人工神经网络的大坝变形分析与预报——以西津大坝2%
+7\#点的变形监测为例[J].
+\newblock 吉林大学学报（地球科学版）, 2009, 39:5.
+
+\bibitem[薛新华和张我华(2006)]{XUEZHANG-MUTATION}
+薛新华, 张我华.
+\newblock 大坝失稳的尖点突变模型分析[J].
+\newblock 中国农村水利水电, 2006:4.
+
+\bibitem[汪树玉~等(1999)]{WANGLIU-CHAO}
+汪树玉, 刘国华, 杜王盖,等.
+\newblock 大坝观测数据序列中的混吨现象[J].
+\newblock 水利学报, 1999.
 
 \bibitem[汪树玉 et al.(1998)]{BAYESIAN-DAM}
 汪树玉, 刘国华, 刘立军.
