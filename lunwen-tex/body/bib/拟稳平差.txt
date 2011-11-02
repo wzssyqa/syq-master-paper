@@ -1,0 +1,40 @@
+@article{Tamesada:1980:SMQ:1310151.1310541,
+ author = {Tamesada, T.},
+ title = {Sequential Machines Having Quasi-Stable States},
+ journal = {IEEE Trans. Comput.},
+ issue_date = {May 1980},
+ volume = {29},
+ issue = {5},
+ month = {May},
+ year = {1980},
+ issn = {0018-9340},
+ pages = {405--408},
+ numpages = {4},
+ url = {http://dx.doi.org/10.1109/TC.1980.1675593},
+ doi = {http://dx.doi.org/10.1109/TC.1980.1675593},
+ acmid = {1310541},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {unstable state, Asynchronous sequential machine, autonomous sequential machine, flow table, multivibrator, quasi-stable state, stable state, statetransition diagram},
+} 
+
+
+%0 Journal Article
+%A 王振方
+%A 李博峰
+%A 沈云中
+%H WANG Zhen-fang
+%H LI Bo-feng
+%H SHEN Yun-zhong
+%T 基于奇异值分解的拟稳平差法
+%J 测绘通报
+%J BULLETIN OF SURVEYING AND MAPPING
+%G chi
+%D 2008
+%N 5
+%P 3
+%K 奇异值分解 拟稳平差 SVD分解
+%X 简要介绍原有的拟稳平差法,提出一种基于奇异值分解的拟稳平差法,导出该算法的计算公式.并用实际算例分析比较新算法和原有算法,结果表明:新算法和原有算法等价.新算法公式简洁、计算简单,是一种可取的拟稳平差算法.
+%U http://d.wanfangdata.com.cn/Periodical_chtb200805008.aspx
+%W 北京万方数据股份有限公司
+

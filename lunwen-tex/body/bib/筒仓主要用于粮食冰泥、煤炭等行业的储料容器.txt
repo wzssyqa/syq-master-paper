@@ -1,0 +1,15 @@
+%0 Journal Article
+%A 崔健
+%A 罗建平
+%T 圆形煤仓仓壁的设计
+%J 中国新技术新产品
+%J CHINA NEW TECHNOLOGIES AND PRODUCTS
+%G chi
+%D 2011
+%N 6
+%P 1
+%K 煤仓 仓壁设计
+%X 我国煤矿、电厂、码头储存煤炭的煤仓基本上都是采用现浇混凝土筒仓,施工简单,操作方便,有较好的防火性能.其仓壁计算不仅考虑贮料对仓壁的压力,还应需要考虑贮抖与仓壁的摩擦力影响.
+%U http://d.wanfangdata.com.cn/Periodical_zgxjsxcpjx201106054.aspx
+%W 北京万方数据股份有限公司
+

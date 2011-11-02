@@ -1,0 +1,24 @@
+%0 Journal Article
+%A 陈乐求
+%A 彭振斌
+%A 陈伟
+%A 彭文祥
+%A 吴启红
+%H CHEN Le-qiu
+%H PENG Zhen-bin
+%H CHEN Wei
+%H PENG Wen-xiang
+%H WU Qi-hong
+%T 基于模糊控制的人工神经网络模拟在土质边坡安全预测中的应用
+%J 中南大学学报（自然科学版）
+%J JOURNAL OF CENTRAL SOUTH UNIVERSITY
+%G chi
+%D 2009
+%N 5
+%V 40
+%P 7
+%K 模糊控制系统 神经网络 模糊子集 预测 边坡稳定 fuzzy control system neural network fuzzy sets prediction slope stability
+%X 从最优化角度出发,用神经网络解决模糊控制系统的规则提取问题,给出可靠的基于BP算法的可靠神经网络模拟过程,对模糊子集个数的选取与系统复杂性、精确性之间的关系进行讨论.为获得边坡复杂工况下的安全特征,建立基于模糊控制的人工神经网络边坡安全预测模型,由大量样本进行网络训练.研究结果表明:所建立的模型预测精度较高,且实用易行;边坡的坡度、内摩擦角、凝聚力对边坡的安全系数影响较大;该预测模型可用于处理普遍存在的不确定性、非线性复杂工程问题;通过模糊控制调整模型,可对不同工程对象进行较精确的模拟分析.
+%U http://d.wanfangdata.com.cn/Periodical_zngydxxb200905037.aspx
+%W 北京万方数据股份有限公司
+

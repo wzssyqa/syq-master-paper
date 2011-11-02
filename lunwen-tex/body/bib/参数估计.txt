@@ -1,0 +1,39 @@
+%0 Journal Article
+%A 郑作亚
+%A 陈永奇
+%A 卢秀山
+%H ZHENG Zuo-ya
+%H CHEN Yong-qi
+%H LU Xiu-shan
+%T 基于模糊度中误差的GPS信号第三民用频率L5的选取研究
+%J 测绘学报
+%J ACTA GEODAETICA ET CARTOGRAPHICA SINICA
+%G chi
+%D 2007
+%N 4
+%V 36
+%P 6
+%K GPS信号 模糊度解算 标准中误差 L5频率 三频观测值
+%X 从模糊度参数标准中误差角度出发讨论信号L5频率的选取问题,在双频观测资料模糊度参数估计基础上,研究三频观测资料模糊度参数估计,并进行模糊度参数标准中误差确定、讨论信号频率与模糊度标准中误差之间的关系,最后提出新的民用频率取值范围的建议.为今后的GALILEO系统、其他导航系统等信号频率选取提供一种思路和借鉴.
+%U http://d.wanfangdata.com.cn/Periodical_chxb200704005.aspx
+%W 北京万方数据股份有限公司
+
+%0 Journal Article
+%A 周世健
+%A 陈永奇
+%A 邓康伟
+%H Zhou Shijian
+%H Chen Yongqi
+%H Conrad Tang
+%T 尺度参数的Lp估计与精度评定
+%J 测绘学报
+%J ACTA GEODAETICA ET CARTOGRAPHICA SINICA
+%G chi
+%D 1998
+%N 4
+%V 27
+%K 尺度参数 Lp估计 精度评定 抗差性 影响函数
+%X 根据定位参数与尺度参数的联合M估计,导出了尺度参数的Lp估计;当p=2时,与最小二乘估计一致,观测数据服从正态分布时,为最优无偏估计;由于尺度参数Lp估计的影响函数为无界函数,估计不具抗差性,但把残差Winsor化,作者得到了尺度参数的抗差Lp估计;依据定位参数的协方差阵,可进行Lp估计的精度评定.这些结果对于Lp估计的研究和应用具有一定的参考价值.
+%U http://d.wanfangdata.com.cn/Periodical_chxb199804004.aspx
+%W 北京万方数据股份有限公司
+

@@ -1,0 +1,21 @@
+%0 Journal Article
+%A 赵玉玲
+%A 张兆江
+%A 姚习康
+%A 刘海新
+%H Zhao Yuling
+%H Zhang Zhaojiang
+%H Yao Xikang
+%H Liu Haixin
+%T EMD-Wavelet降噪模型在动态变形数据处理中的应用
+%J 大地测量与地球动力学
+%J JOURNAL OF GEODESY AND GEODYNAMICS
+%G chi
+%D 2010
+%N 5
+%V 30
+%K EMD 小波变换 降噪模型 动态变形 数据处理
+%X 针对由于多路径等因素的影响,采用GPS进行动态监测数据精度不能满足变形分析需要的问题,结合小波和经验模态分解(EMD)数据降噪方法,提出一种新的动态变形数据降噪模型EMD-Wavelet模型.将该模型用于动态坐标序列的降噪处理,通过小波方法对EMD分解的模态分量进行降噪,EMD对降噪后的模态函数进行重构,得到去噪后的坐标序列.与Wavelet、Kalman滤波、Kalman平滑和EMD相比较,EMD-Wavelet模型可以得到相对较高的信噪比和最小的均方根差、归一化绝对误差和偏差,表明EMD-Wavelet模型在GPS动态变形监测数据处理中相对较优.
+%U http://d.wanfangdata.com.cn/Periodical_dkxbydz201005016.aspx
+%W 北京万方数据股份有限公司
+

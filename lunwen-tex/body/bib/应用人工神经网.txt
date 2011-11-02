@@ -1,0 +1,53 @@
+%0 Journal Article
+%A 马丽霞
+%A 王凤艳
+%A 陈剑平
+%H MA Li-xia
+%H WANG Feng-yan
+%H CHEN Jian-ping
+%T 基于人工神经网络的大坝变形分析与预报——以西津大坝27#点的变形监测为例
+%J 吉林大学学报（地球科学版）
+%J JOURNAL OF JILIN UNIVERSITY(EARTH SCIENCE EDITION)
+%G chi
+%D 2009
+%N 3
+%V 39
+%P 5
+%K 大坝变形预报 BP网络 逐步回归
+%X 以MATLAB语言为基础,应用BP神经网络、逐步回归分析进行西津大坝27#点的变形分析与预报研究.在此基础上,进一步提出了逐步回归BP神经网络组合的预报方法,并探讨了3种方法的预报结果.研究表明,BP神经网络用于大坝变形分析与预报是可行的,所提出的逐步回归BP神经网络组合法提高了变形影响因子选择的科学性,在预报效果上,优于前两种方法.
+%U http://d.wanfangdata.com.cn/Periodical_cckjdxxb200903017.aspx
+%W 北京万方数据股份有限公司
+
+%0 Journal Article
+%A 王穗辉
+%A 潘国荣
+%T 人工神经网络在隧道地表变形预测中的应用
+%J 同济大学学报(自然科学版)
+%J JOURNAL OF TONGJI UNIVERSITY
+%G chi
+%D 2001
+%N 10
+%V 29
+%P 5
+%K 神经网络 地铁隧道 变形预报
+%X 借助于神经网络方法处理非线性问题的优势,采用改进后的B-P网络算法,对上海地铁2号线盾构推进中隧道上方的地表变形作了趋势预报,并与其它预测方法作了比较.结果表明:将人工神经网络用于地表变形预测,效果优于其它方法.
+%U http://d.wanfangdata.com.cn/Periodical_tjdxxb200110003.aspx
+%W 北京万方数据股份有限公司
+
+%0 Journal Article
+%A 陈昌彦
+%A 王思敬
+%A 沈小克
+%T 边坡岩体稳定性的人工神经网络预测模型
+%J 岩土工程学报
+%J CHINESE JOURNAL OF GEOTECHNICAL ENGINEERING
+%G chi
+%D 2001
+%N 2
+%V 23
+%P 5
+%K 边坡岩体稳定性分析 边坡岩体变形失稳模式 人工神经网络技术 复合指标
+%X 在综合分析边坡岩体变形失稳破坏模式及其影响因素的基础上，提出了表征边坡岩体稳定性分析的复合指标。以大量水电边坡工程的稳定状况为学习训练样本及预测样本，讨论了基于人工神经网络技术的边坡岩体稳定性分析方法及其有效性。研究表明，用人工神经网络方法预测边坡岩体的稳定状况是可行的。
+%U http://d.wanfangdata.com.cn/Periodical_ytgcxb200102006.aspx
+%W 北京万方数据股份有限公司
+
