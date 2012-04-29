@@ -7,7 +7,7 @@ def diff_min_max(x,y):
 def grey(x1,y1,rho=0.5):
 	x=x1/(x1.mean())
 	y=numpy.copy(y1)
-	y_m=y1.mean(1)
+	y_m=y1.mean(axis=1)
 	y_len,xxx=y.shape
 	for i in range(0,y_len):
 		y[i]=y[i]/(y_m[i])

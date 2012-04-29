@@ -86,6 +86,15 @@ gen_all_report()
 #生成图形和newreport,给 mo1_cj 和 mo2_cj 赋值
 plot_all_mc(argv[1],argv[2])
 gen_paper(argv[1],argv[2])
+
+#for i in range(0,4):
+#	mo1_cj[i]=mo1_cj[i][21:]
+#	mo2_cj[i]=mo2_cj[i][21:]
+#mo1_load=mo1_load[21:]
+#mo2_load=mo2_load[21:]
+#mo_tmp=mo_tmp[21:]
+#mo_day=mo_day[21:]
+
 mo1_pca,mo2_pca=do_fast_ica(True)
 plot_icaed(mo_day, mo1_load, mo_tmp, mo1_pca, '41-pca')
 plot_icaed(mo_day, mo2_load, mo_tmp, mo2_pca, '42-pca')

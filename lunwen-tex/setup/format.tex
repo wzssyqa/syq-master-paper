@@ -106,7 +106,7 @@
 \newenvironment{proof}{\hei{证明}　}{\hfill $\square$ \vskip 4mm}
 
 % 目录标题
-\renewcommand\contentsname{\hfill 目　　录 \hfill}
+\renewcommand\contentsname{\hfill\LARGE 目　　录 \hfill}
 \renewcommand\listfigurename{\hfill 插~图~目~录 \hfill}
 \renewcommand\listtablename{\hfill 表~格~目~录 \hfill}
 \renewcommand{\bibname}{\hfill 参~考~文~献 \hfill}
@@ -234,164 +234,39 @@
 % define graph scale
 \def\gs{1.0}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 封面摘要
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def\cdegree#1{\def\@cdegree{#1}}\def\@cdegree{}
-\def\ctitle#1{\def\@ctitle{#1}}\def\@ctitle{}
-\def\caffil#1{\def\@caffil{#1}}\def\@caffil{}
-\def\csubject#1{\def\@csubject{#1}}\def\@csubject{}
-\def\cauthor#1{\def\@cauthor{#1}}\def\@cauthor{}
-\def\cauthorno#1{\def\@cauthorno{#1}}\def\@cauthorno{}
-\def\csupervisor#1{\def\@csupervisor{#1}}\def\@csupervisor{}
-\def\cdate#1{\def\@cdate{#1}}\def\@cdate{}
-\long\def\cabstract#1{\long\def\@cabstract{#1}}\long\def\@cabstract{}
-\def\ckeywords#1{\def\@ckeywords{#1}}\def\@ckeywords{}
-\def\etitle#1{\def\@etitle{#1}}\def\@etitle{}
-\long\def\eabstract#1{\long\def\@eabstract{#1}}\long\def\@eabstract{}
-\def\ekeywords#1{\def\@ekeywords{#1}}\def\@ekeywords{}
+\def\acknowledgements{
+     \newpage
+     \thispagestyle{empty}
+     \chapter*{\hfill \LARGE 致　　谢 \hfill}
+\addcontentsline{toc}{chapter}{致　　谢}
+时光飞逝，短暂的硕士研究生生涯临近结束。值此论文即将完成之际，
+向所有关心、指导、帮助过我的老师、朋友、同学们，表示衷心的感谢。
 
-% 封面
-\def\makecover{
-    \begin{titlepage}
-    \newpage
-    \thispagestyle{empty}
-    \begin{center}
-    \parbox[t][4.40cm][c]{\textwidth}
-    {
-    		\begin{center}
-    			{\xiaoyi\song\textbf{\@cdegree}\\}
-              \vspace{1.34cm}
-              {\erhao\hei\textsf{\@ctitle}\\}
-              \vspace{0.13cm}
-              {\sanhao\textbf{\@etitle}\\}
-         \end{center}
-	}
-	\parbox[b][10.39cm][c]{\textwidth}
-	{
-        \vspace{8.1cm}
-		\begin{center}
-		{
-         	\xiaosan\song
-         	\begin{tabular}{p{0.6cm}p{6.4em}@{\extracolsep{0.5em}}lc}
-         	\vspace{0.18cm}
-			~ & 作 \hfill 者 \hfill 姓 \hfill 名：& \fixedunderlineleft[6.08cm]{\@cauthor} & \\
-			\vspace{0.18cm}
-			~ & 学 \hfill 科 \hfill 、\hfill 专 \hfill 业：& \fixedunderlineleft[6.08cm]{\@csubject} & \\
-			\vspace{0.18cm}
-			~ & 学 \hfill 号：& \fixedunderlineleft[6.08cm]{\@cauthorno} & \\
-			\vspace{0.18cm}
-			~ & 指 \hfill 导 \hfill 教 \hfill 师：& \fixedunderlineleft[6.08cm]{\@csupervisor} & \\
-			\vspace{0.18cm}
-			~ & 完 \hfill 成 \hfill 日 \hfill 期：& \fixedunderlineleft[6.08cm]{\@cdate} & \\
-			\vspace{0.18cm}
-			\end{tabular}
-		}
-		\end{center}
-	}
+首先向两年多来在我的学业和做人想给予了指导和关怀的导师赵国忱教授
+表示衷心的感谢。两年多来导师以他渊博的学识对我的学习、研究给予了悉心的指导，
+提供了极佳的环境，营造了自由的氛围。本文从选题、撰写、修改到最终定稿，
+都倾注了导师的大量心血。他严谨求实的治学态度、宽阔的视野、
+创新而敏锐的思维、勇于进取、甘当人梯的精神，
+严于律己、宽以待人的思想品质使我深感敬佩，并让我受益终生。
 
-	\vspace{2.34cm}
+感谢辽宁工程技术大学测绘与地理科学学院两年多来的培养，感谢学院的
+领导与老师们的关系、帮助和支持。
 
-    	{
-     	\xiaoer\song
-		辽宁工程技术大学\\
-         \vspace{0.24cm}
-		\xiaosi\song
-		Liaoning Technological University
-	}
-	\end{center}
-	\cleardoublepage
-	\end{titlepage}
+感谢鄂尔多斯昊华精煤有限公司技术科的全体同志，他们精湛的技术、
+高标准的工作、随和的待人态度，使在和他们一起工作的这段时间给我留下了
+美好、深刻的印象。
+
+感谢和我在同一个宿舍生活过的同学：邹阳、徐杨、吴作启、赵亮
+他们容忍了几乎黑白颠倒的生活，忍受了我向总是向他们说些他们并不关心的事情。
+更重要的是，和他们一起无论是讨论学术还是生活问题，总能让我受益匪浅。
+感谢范良同学，我们在一起的合作，同样让我学到了非常多。
+
+感谢两年多的研究生生活中，班级同学对我的关心和帮助。
+
+感谢参考文献中提到的各文献的作者所提供的研究思路与方法，没有他们开创性的研究，
+就不会有这篇论文，在此对他们表示最崇高的敬意与感谢。
+
 }
 
-% 独创性说明
-\def\originality{
-\chapter*{\hfill  学位论文原创性声明 \hfill}
-\addcontentsline{toc}{chapter}{学位论文原创性声明}
-\large{
-本人声明所呈交的论文是我个人在导师的指导下进行的研究工作所取得的成果。%
-尽我所知，除文中特别加以标注和致谢的地方外，%
-论文中不包含其他人已经发表或撰写过的的研究成果。%%
-其他同志对本研究所做的任何贡献均已在论文中做了明确的说明并表示了谢意。%
-   \\
-   \\
-本人学位论文与资料若有不实，愿意承担一切的法律责任。
-	
-	　  学位论文作者签名：	\underline{\hspace{4.5cm}}
-	
-	　 \qquad \qquad\qquad\qquad\qquad 年\qquad 月\qquad 日 
-}
-}
-
-\def\authorization
-{
-\begin{center}
-    \sanhao\hei~辽宁工程技术大学学位论文版权使用授权书~
-\end{center}
-
-\sihao\song\noindent
-　　本人完全了解学校有关学位论文知识产权的规定，%
-在校攻读学位期间论文工作的知识产权属于辽宁工程技术大学，允许论文被查阅和借阅。%
-学校有权保留论文并向国家有关部门或机构送交论文的复印件和电子版，%
-可以将本学位论文的全部或部分内容编入有关数据库进行检索，%
-可以采用影印、缩印、或扫描等复制手段保存和汇编本学位论文。%
-\\
-
-\vspace{0.2cm}\noindent
-学{\hfill}位{\hfill}论{\hfill}文{\hfill}题{\hfill}目{\hfill}：\fixedunderlinecenter[12.6cm]{\@ctitle}\\
-作{\hfill}者{\hfill}签{\hfill}名{\hfill}：\fixeddistanceleft[12.6cm]{\underline{\hspace{5.8cm}}\hfill
-    日期：\underline{\hspace{1.4cm}}~年~{\underline{\hspace{0.7cm}}~月~{\underline{\hspace{0.7cm}}~日~}}}\\
-导{\hfill}师{\hfill}签{\hfill}名{\hfill}：\fixeddistanceleft[12.6cm]{\underline{\hspace{5.8cm}}\hfill
-	日期：\underline{\hspace{1.4cm}}~年~{\underline{\hspace{0.7cm}}~月~{\underline{\hspace{0.7cm}}~日~}}}\\
-\renewcommand{\baselinestretch}{1.27}
-}
-
-\def\makeabstract{
-    \defaultfont
-    \chapter*{\hfill 摘　　要 \hfill}
-    \addcontentsline{toc}{chapter}{摘　　要}
-    \setcounter{page}{1}
-    \@cabstract
-    \vspace{0.53cm}
-
-    \noindent {\hei{关键词：{\fs\@ckeywords}}}
-
-    \defaultfont
-    \cleardoublepage
-    \chapter*{}
-    \addcontentsline{toc}{chapter}{Abstract}
-    \vspace{-1.40cm}
-    \begin{center}
-        {\xiaosan\textrm{\@etitle}}
-    \end{center}
-    \vspace{-0.35cm}
-    \begin{center}
-    {
-       \xiaosan{Abstract}\\
-    }
-    \end{center}
-    \vspace{0.12cm}
-
-    \@eabstract
-
-    \vspace{0.55cm}
-
-    \noindent {\textbf{Key Words:}}~~{\textsf{\@ekeywords}}
-    \cleardoublepage
-}
-
-\makeatletter
-\def\hlinewd#1{%
-  \noalign{\ifnum0=`}\fi\hrule \@height #1 \futurelet
-   \reserved@a\@xhline}
-\makeatother
-
-%定义索引生成
-\def\generateindex
-{
-    \addcontentsline{toc}{chapter}{\indexname}
-    \printindex
-    \cleardoublepage
-}
 
 \raggedbottom 

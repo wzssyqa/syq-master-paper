@@ -148,7 +148,6 @@ $M_W$     	 &  1.0      & 2.0    \\
 			{Fig.}{Difference of going and forth, Misclosure, Check}
 \end{figure}
 
-\newpage
 \subsection{预警处理}
 当煤仓观测过程中沉降值或者沉降速率超出预警值或者发现煤仓出现倾斜时，
 必须立即报告煤仓的使用单位，同时应及时增加观测或着调整观测方案。
@@ -172,7 +171,7 @@ $M_W$     	 &  1.0      & 2.0    \\
 1)装载量数据文件的格式为：第一行为观测日期，第二行为观测者姓名，
 第三行为数据计算者姓名，
 第四行及以下为各个煤仓的装载量(装载量占总装载能力的百分比)。
-每个字段均不加引号。
+每个字段均不加引号。(\ref{figure:4-heavy})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.5]{4-heavy-csv.png}
@@ -180,7 +179,8 @@ $M_W$     	 &  1.0      & 2.0    \\
 			{Fig.}{Format of text-database for load}
 \end{figure}
 
-高程观测值文件的格式同样也是逗号分隔的文本文件，其格式为：第一行是观测日期，从第二行起是煤仓上各沉降点的高程观测值。
+高程观测值文件的格式同样也是逗号分隔的文本文件，
+其格式为：第一行是观测日期，从第二行起是煤仓上各沉降点的高程观测值。(\ref{figure:4-level})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.5]{4-level-csv.png}
@@ -192,10 +192,9 @@ $M_W$     	 &  1.0      & 2.0    \\
 但是如果遇到某个数据与高程观测值文件中对应的文件不同，
 注释文件中的此数据在生成报表文件时将会作为注释对待。
 
-\newpage
 点号文件存储了每个煤仓上沉降点的信息。
 第一列是煤仓类型的编号，依次为一号原煤仓、二号原煤仓、一号矸石仓等。
-第二列及后面各列是每个煤仓上沉降点的编号。
+第二列及后面各列是每个煤仓上沉降点的编号。(\ref{figure:static-csv})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.5]{static-csv.png}
@@ -208,7 +207,7 @@ $M_W$     	 &  1.0      & 2.0    \\
 生成了几种需要的报表格式以及沉降曲线。
 
 单点沉降值表，包括序号、时间、本次下沉、累积下沉、高程、
-载荷、观测者、计算者、备注共10项。这个表格的每一行表示一次观测。
+载荷、观测者、计算者、备注共10项。这个表格的每一行表示一次观测。(\ref{figure:set-for-single})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.5]{42-7-all.png}
@@ -216,8 +215,7 @@ $M_W$     	 &  1.0      & 2.0    \\
 			{Fig.}{Report for single point}
 \end{figure}
 
-\newpage
-煤仓各点高程表，总结煤仓上各点的高程观测值。
+煤仓各点高程表，总结煤仓上各点的高程观测值。(\ref{figure:level-for-bunker})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.5]{42-new-level.png}
@@ -226,18 +224,17 @@ $M_W$     	 &  1.0      & 2.0    \\
 			{Fig.}{Leveling of points in 1 bunker}
 \end{figure}
 
-煤仓各点沉降表，总结煤仓上各点的沉降值。
+煤仓各点沉降表，总结煤仓上各点的沉降值。(\ref{figure:settle-for-bunker})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.5]{42-settle.png}
-   \bicaption[figure:level-for-bunker]{煤仓上各点沉降量}
+   \bicaption[figure:settle-for-bunker]{煤仓上各点沉降量}
 					{煤仓上各点沉降量}
 			{Fig.}{Settlement of points in 1 bunker}
 \end{figure}
-\newpage
 
 沉降观测阶段总结表模板，根据命令行参数，生成需要提交的阶段总结模板，
-经过适当的修改后，提交给委托方。
+经过适当的修改后，提交给委托方。(\ref{figure:paper})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.5]{4-paper.png}
@@ -247,7 +244,7 @@ $M_W$     	 &  1.0      & 2.0    \\
 \end{figure}
 
 沉降曲线图，横轴为从开始测量至最后一次测量的天数；
-纵轴正方向为装载量，负方向为各点沉降量。
+纵轴正方向为装载量，负方向为各点沉降量。(\ref{figure:plot-41}, \ref{figure:plot-42})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.3]{41-plot.png}
@@ -263,7 +260,6 @@ $M_W$     	 &  1.0      & 2.0    \\
 				    {二号末煤仓沉降曲线图}
 			{Fig.}{Curves for settlement of Powder Bulker No.2}
 \end{figure}
-\newpage
 
 \section{FastICA}
 FastICA是一种流行的高效的独立成分分析算法，
@@ -295,7 +291,7 @@ MDP(Modular toolkit for Data Processing)是
 使用FastICA对一组数据进行分析的方法一般有两种：
 直接使用FastICA算法，得到和原始数据同样数量的独立成分；
 也可以首先使用主成分分析(PCA)对数据进行降维处理，
-再使用FastICA进行分析。   
+再使用FastICA进行分析。
 
 为了评估应用独立成分分析的效果，
 可以使用Pearson相关系数、互信息和灰关联度作为评价指标。
@@ -327,7 +323,7 @@ input_dim=None, dtype=None
 fastica(x)
 \end{lstlisting}
 如下图像为，使用FastICA之后，根据得到的数据得到的，
-观测值的图形见图(\ref{figure:plot-41})和(\ref{figure:plot-42})。
+观测值的图形见图(\ref{figure:plot-41-ica})。
 
 %一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像：
 \begin{figure}[!htbp]
@@ -338,15 +334,17 @@ fastica(x)
 			{Fig.}{Four IC, Loadage and Temperature for Powder Bulker No.1}
 \end{figure}
 
-%二号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像：
+鉴于前期(2010年4月之前)是使用光学水准仪进行的观测，误差可能较大。
+在此处我们再将该断时间的测量值去除，使用FastICA之后得到的图像见(\ref{figure:plot-41-ica-poped})。
+%一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像(去除前期数据)：
 \begin{figure}[!htbp]
    \centering
-   \includegraphics[scale=0.3]{42-ica-plot.png}
-   \bicaption[figure:plot-42-ica]{二号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
-				    {二号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
-			{Fig.}{Four IC, Loadage and Temperature for Powder Bulker No.2}
+   \includegraphics[scale=0.3]{41-poped-ica-plot.png}
+   \bicaption[figure:plot-41-ica-poped]
+			{}{一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像(去除初期数据之后)}
+			{Fig.}{Four IC, Loadage and Temperature for Powder Bulker No.1 (Data before 120d removed)}
 \end{figure}
-\newpage
+
 
 \subsection{首先使用PCA降维再应用FastICA}
 MDP中也带了pca函数，可以用来对信号进行降维。
@@ -371,7 +369,7 @@ pca(x, input_dim=4, output_dim=3)
 使用PCA对原始信号降维之后，再使用fastica函数获取独立分量。
 
 以下对PCA降维后获得的数据使用fastica之后，画出的图像。
-观测值的图形见图(\ref{figure:plot-41})和(\ref{figure:plot-42})
+观测值的图形见图(\ref{figure:plot-41-pca})
 
 %一号末煤仓使用PCA+FastICA后得到的四个独立分量及装载量、气温的图像：
 \begin{figure}[!htbp]
@@ -382,15 +380,16 @@ pca(x, input_dim=4, output_dim=3)
 			{Fig.}{Four IC(With PCA first), Loadage and Temperature for Powder Bulker No.1}
 \end{figure}
 
-%二号末煤仓使用PCA+FastICA后得到的四个独立分量及装载量、气温的图像：
+和直接使用FastICA时类似，将最初使用光学水准仪测量的数据去掉之后，
+计算并绘制得到的图像为(\ref{figure:plot-41-pca-poped})。
 \begin{figure}[!htbp]
    \centering
-   \includegraphics[scale=0.3]{42-pca-plot.png}
-   \bicaption[figure:plot-42-pca]{二号末煤仓PCA降维后使用FastICA后得到的四个独立分量及装载量、气温的图像}
-				    {二号末煤仓使用PCA降维FastICA后得到的四个独立分量及装载量、气温的图像}
-			{Fig.}{Four IC(With PCA first), Loadage and Temperature for Powder Bulker No.2}
+   \includegraphics[scale=0.3]{41-poped-pca-plot.png}
+   \bicaption[figure:plot-41-pca-poped]{一号末煤仓PCA降维后使用FastICA后得到的四个独立分量及装载量、气温的图像}
+				    {一号末煤仓使用PCA降维FastICA后得到的四个独立分量及装载量、气温的图像}
+			{Fig.}{Four IC(With PCA first), Loadage and Temperature for Powder Bulker No.1}
 \end{figure}
-\newpage
+
 
 \subsection{各影响因子与所得独立成分的关系}
 在根据fastica或者PCA之后的FastICA得到独立成分之后，
@@ -398,7 +397,7 @@ pca(x, input_dim=4, output_dim=3)
 同时采用Pearson相关系数、互信息、灰关联度作为度量。
 
 \input{body/icatables}
-\clearpage
+\input{body/icatables-poped}
 
 \subsection{对以上结果的分析}
 通过分析以上的图表，对比装煤量、当地平均气温、观测时间等信息，

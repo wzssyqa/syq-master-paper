@@ -1,142 +1,139 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2012/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: appendix/acknowledgements.aux
 A level-1 auxiliary file: body/chap00.aux
 A level-1 auxiliary file: body/chap01.aux
 A level-1 auxiliary file: body/chap02.aux
 A level-1 auxiliary file: body/chap03.aux
 A level-1 auxiliary file: body/chap04.aux
 A level-1 auxiliary file: body/conclusion.aux
-The style file: GBT7714-2005NLang-UTF8.bst
+The style file: GBT7714-2005NLang-UTF8.bst.bst
 A level-1 auxiliary file: appendix/publications.aux
-new.block is an unknown function---line 73 of file GBT7714-2005NLang-UTF8.bst
-remove.dots is an unknown function---line 461 of file GBT7714-2005NLang-UTF8.bst
-remove.dots is an unknown function---line 514 of file GBT7714-2005NLang-UTF8.bst
-remove.dots is an unknown function---line 571 of file GBT7714-2005NLang-UTF8.bst
-remove.dots is an unknown function---line 616 of file GBT7714-2005NLang-UTF8.bst
-format.pages is an unknown function---line 1163 of file GBT7714-2005NLang-UTF8.bst
-format.pages is an unknown function---line 1194 of file GBT7714-2005NLang-UTF8.bst
-format.pages is an unknown function---line 1203 of file GBT7714-2005NLang-UTF8.bst
-format.pages is an unknown function---line 1233 of file GBT7714-2005NLang-UTF8.bst
-format.pages is an unknown function---line 1242 of file GBT7714-2005NLang-UTF8.bst
+new.block is an unknown function---line 73 of file GBT7714-2005NLang-UTF8.bst.bst
+remove.dots is an unknown function---line 461 of file GBT7714-2005NLang-UTF8.bst.bst
+remove.dots is an unknown function---line 514 of file GBT7714-2005NLang-UTF8.bst.bst
+remove.dots is an unknown function---line 571 of file GBT7714-2005NLang-UTF8.bst.bst
+remove.dots is an unknown function---line 616 of file GBT7714-2005NLang-UTF8.bst.bst
+format.pages is an unknown function---line 1163 of file GBT7714-2005NLang-UTF8.bst.bst
+format.pages is an unknown function---line 1194 of file GBT7714-2005NLang-UTF8.bst.bst
+format.pages is an unknown function---line 1203 of file GBT7714-2005NLang-UTF8.bst.bst
+format.pages is an unknown function---line 1233 of file GBT7714-2005NLang-UTF8.bst.bst
+format.pages is an unknown function---line 1242 of file GBT7714-2005NLang-UTF8.bst.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-*publisher is an unknown function---line 1929 of file GBT7714-2005NLang-UTF8.bst
-*　* is an unknown function---line 1938 of file GBT7714-2005NLang-UTF8.bst
-ouput is an unknown function---line 2064 of file GBT7714-2005NLang-UTF8.bst
-ouput is an unknown function---line 2068 of file GBT7714-2005NLang-UTF8.bst
-ouput is an unknown function---line 2102 of file GBT7714-2005NLang-UTF8.bst
-ouput is an unknown function---line 2105 of file GBT7714-2005NLang-UTF8.bst
-format.conference.title is an unknown function---line 2622 of file GBT7714-2005NLang-UTF8.bst
-format.cconference.title is an unknown function---line 2657 of file GBT7714-2005NLang-UTF8.bst
+*publisher is an unknown function---line 1929 of file GBT7714-2005NLang-UTF8.bst.bst
+*　* is an unknown function---line 1938 of file GBT7714-2005NLang-UTF8.bst.bst
+ouput is an unknown function---line 2064 of file GBT7714-2005NLang-UTF8.bst.bst
+ouput is an unknown function---line 2068 of file GBT7714-2005NLang-UTF8.bst.bst
+ouput is an unknown function---line 2102 of file GBT7714-2005NLang-UTF8.bst.bst
+ouput is an unknown function---line 2105 of file GBT7714-2005NLang-UTF8.bst.bst
+format.conference.title is an unknown function---line 2622 of file GBT7714-2005NLang-UTF8.bst.bst
+format.cconference.title is an unknown function---line 2657 of file GBT7714-2005NLang-UTF8.bst.bst
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: body/reference.bib
-I was expecting a `,' or a `}'---line 39 of file body/reference.bib
- :   
- :   language=   {c},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 You can't pop an empty literal stack for entry AAPO01
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry PEARSON
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DEFORM03
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DEFOR07
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LIZHONG-CAMEAR
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry SHEN-QINGXIONG-CAMEAR
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry GU-GAO-QIU-CAMEAR
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry GU-GAO-QIU-CAMEAR
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LU-HUANG-LI-CAMEAR
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LU-HUANG-LI-CAMEAR
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry RTP-CAMEAR
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LIU-WU-LEVEL
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LIU-WU-LEVEL
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry HE-XIAOYE-STATIC
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LINQIN-STATIC
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry HUWHH-SCANNER
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry XUWANG-SCANNER
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry GUIZHCH-GEOROBOT
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry HANLI-LEVELBOT
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry FENG-LI-TRANS
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 Warning--there's a number but no volume in Chrzanowski-compare
 You can't pop an empty literal stack for entry Chrzanowski-compare
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry Chrzanowski-compare
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry 2002287011810
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry YINHUI-GREY
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry YINHUI-GREY
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry MAWANG-BP
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry XUEZHANG-MUTATION
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry XUEZHANG-MUTATION
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry WANGLIU-CHAO
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry WANGLIU-CHAO
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 Warning--there's a number but no volume in BAYESIAN-DAM
 You can't pop an empty literal stack for entry BAYESIAN-DAM
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry BAYESIAN-DAM
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 Warning--there's a number but no volume in GEHEYAN
 You can't pop an empty literal stack for entry GEHEYAN
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry GEHEYAN
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 Warning--there's a number but no volume in DAM-K-BASE
 You can't pop an empty literal stack for entry DAM-K-BASE
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DAM-K-BASE
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DENOISING-WAVELET
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry BULKER-WALL
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry BULKER-WALL
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry BSS06
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry OVERSAMPLED-ICA
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You've used 30 entries,
             6753 wiz_defined-function locations,
-            1396 strings with 13822 characters,
-and the built_in function-call counts, 9688 in all, are:
-= -- 853
+            1395 strings with 13797 characters,
+and the built_in function-call counts, 9689 in all, are:
+= -- 854
 > -- 361
 < -- 11
 + -- 198
 - -- 84
-* -- 637
-:= -- 1435
+* -- 638
+:= -- 1436
 add.period$ -- 96
 call.type$ -- 30
 change.case$ -- 60
 chr.to.int$ -- 30
 cite$ -- 34
-duplicate$ -- 487
-empty$ -- 1145
+duplicate$ -- 486
+empty$ -- 1144
 format.name$ -- 151
 if$ -- 2295
 int.to.chr$ -- 1
@@ -144,11 +141,11 @@ int.to.str$ -- 31
 missing$ -- 35
 newline$ -- 164
 num.names$ -- 60
-pop$ -- 221
+pop$ -- 219
 preamble$ -- 1
 purify$ -- 30
 quote$ -- 0
-skip$ -- 388
+skip$ -- 389
 stack$ -- 0
 substring$ -- 228
 swap$ -- 30
@@ -159,5 +156,5 @@ type$ -- 110
 warning$ -- 4
 while$ -- 48
 width$ -- 0
-write$ -- 430
+write$ -- 431
 (There were 59 error messages)
