@@ -9,14 +9,14 @@
 与怀疑为影响因素的因子进行比较，考察它们之间的关系。可以使用的方法
 有相关系数、互信息、灰色系统理论等。
  
-\section{相关系数\ucite{PEARSON}}
+\section{相关系数}
 在概率论和统计学中，\textbf{相关(Correlation)}，
 显示两个随机变量之间线性关系的强度和方向。
 在统计学中，相关的意义是用来衡量两个变量相对于其相互独立的距离。
 在这个广义的定义下，有许多根据数据特点而定义的用来衡量数据相关的系数。
 
 对于不同数据特点，可以使用不同的系数。
-最常用的是\textbf{Pearson积差相关系数}。
+最常用的是\textbf{Pearson积差相关系数}\ucite{PEARSON}。
 其定义是两个变量协方差除以两个变量的标准差(方差的平方根)。
 \begin{equation}
 \rho_{X,Y} = {\mathrm{cov}(X,Y) \over \sigma_X \sigma_Y} 
@@ -48,12 +48,12 @@ $Y$ = $X^2$。 那么$Y$是完全由$X$确定。因此$Y$ 和$X$是不独立的�
 这时，\textbf{反衰减性(disattenuation)}是一个更准确的系数。
 
 
-\section{互信息\ucite{AAPO01}}
-互信息是一组随机变量的成员具有的该集合中其他随机变量的信息的量度。(***)
+\section{互信息}
+互信息是一组随机变量的成员具有的该集合中其他随机变量的信息的量度。\ucite{AAPO01}
 
-\subsection{使用熵的定义(***)}
+\subsection{使用熵的定义}
 可以利用熵，
-将$n$个(标量)随机变量$x_i, i=1,\cdots,n$之间的互信息$I$定义为：
+将$n$个(标量)随机变量$x_i, i=1,\cdots,n$之间的互信息$I$定义为\ucite{AAPO01}：
 \begin{equation} \label{mutual_info_defination1}
 I(x_1, x_2,\cdots ,x_n)=\sum^n_{i=1} H(x_i)-H(\bm{x})
 \end{equation}
@@ -69,9 +69,9 @@ $H(x_i)$这些项给出了当$x_i$这些变量各自单独编码时的码长，
 然而，如果$x_i$之间相互独立，它们都不给出对方的信息，
 这时我们只需对各个变量分别单独编码，而不增加码长。
 
-\subsection{使用Kullback-Leibler散度的定义(***)}
+\subsection{使用Kullback-Leibler散度的定义}
 换另一种观点。利用所谓的Kullback-Leibler散度，
-可以把互信息解释成一个距离。
+可以把互信息解释成一个距离。\ucite{AAPO01}
 两个$n$维概率密度函数$p^1$和$p^2$之间的Kullback-Leibler距离定义为：
 \begin{equation}
 \delta(p^1, p^2) = \int p^1(\xi) log \frac{p^1(\xi)}{p^2(\xi)}\,d\xi
@@ -113,9 +113,9 @@ Kullback-Leibler散度的定义互信息蕴含了下面的重要性质：
 这是Kullback-Leibler散度性质的直接推论。
  
 
-\section{灰色系统理论\ucite{DEFORM03}}
+\section{灰色系统理论}
 \subsection{概述}
-灰色系统理论是由我国原华中理工大学郑聚龙教授在20世纪80年代提出的，
+灰色系统理论\ucite{DEFORM03}是由我国原华中理工大学郑聚龙教授在20世纪80年代提出的，
 它是用来解决信息不完备系统的数学方法，
 它把控制论的观点和方法延伸到复杂的大系统中，
 将自动控制与运筹学的数学方法相结合，用独树一帜的方法和手段，

@@ -30,10 +30,6 @@ format.conference.title is an unknown function---line 2622 of file GBT7714-2005N
 format.cconference.title is an unknown function---line 2657 of file GBT7714-2005NLang-UTF8.bst.bst
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: body/reference.bib
-You can't pop an empty literal stack for entry AAPO01
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You can't pop an empty literal stack for entry PEARSON
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DEFORM03
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DEFOR07
@@ -60,6 +56,15 @@ You can't pop an empty literal stack for entry HE-XIAOYE-STATIC
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LINQIN-STATIC
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--there's a number but no volume in DAQ-ND
+You can't pop an empty literal stack for entry DAQ-ND
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry DAQ-ND
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry HUADONG-CEWEI
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry ZHD-SEN
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry HUWHH-SCANNER
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry XUWANG-SCANNER
@@ -74,6 +79,29 @@ Warning--there's a number but no volume in Chrzanowski-compare
 You can't pop an empty literal stack for entry Chrzanowski-compare
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry Chrzanowski-compare
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry CJS:CJS473
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--there's a number but no volume in ZHOUJW-Outlier
+You can't pop an empty literal stack for entry ZHOUJW-Outlier
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry ZHOUJW-Outlier
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry BAARDA-DETECT
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--there's a number but no volume in LIDEREN-Outlier
+You can't pop an empty literal stack for entry LIDEREN-Outlier
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry LIDEREN-Outlier
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--there's a number but no volume in HYOUC-Outlier
+You can't pop an empty literal stack for entry HYOUC-Outlier
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry HYOUC-Outlier
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry TAO-Outlier
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry CHYQ-OBV
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry 2002287011810
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
@@ -116,45 +144,52 @@ You can't pop an empty literal stack for entry BSS06
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry OVERSAMPLED-ICA
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You've used 30 entries,
+You can't pop an empty literal stack for entry AAPO01
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry PEARSON
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--empty publisher in PEARSON
+You can't pop an empty literal stack for entry PEARSON
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You've used 40 entries,
             6753 wiz_defined-function locations,
-            1395 strings with 13797 characters,
-and the built_in function-call counts, 9689 in all, are:
-= -- 854
-> -- 361
-< -- 11
-+ -- 198
-- -- 84
-* -- 638
-:= -- 1436
-add.period$ -- 96
-call.type$ -- 30
-change.case$ -- 60
-chr.to.int$ -- 30
-cite$ -- 34
-duplicate$ -- 486
-empty$ -- 1144
-format.name$ -- 151
-if$ -- 2295
+            1456 strings with 14521 characters,
+and the built_in function-call counts, 12718 in all, are:
+= -- 1127
+> -- 438
+< -- 19
++ -- 244
+- -- 102
+* -- 849
+:= -- 1873
+add.period$ -- 126
+call.type$ -- 40
+change.case$ -- 80
+chr.to.int$ -- 40
+cite$ -- 49
+duplicate$ -- 642
+empty$ -- 1517
+format.name$ -- 190
+if$ -- 3013
 int.to.chr$ -- 1
-int.to.str$ -- 31
-missing$ -- 35
-newline$ -- 164
-num.names$ -- 60
-pop$ -- 219
+int.to.str$ -- 41
+missing$ -- 46
+newline$ -- 214
+num.names$ -- 80
+pop$ -- 284
 preamble$ -- 1
-purify$ -- 30
+purify$ -- 40
 quote$ -- 0
-skip$ -- 389
+skip$ -- 500
 stack$ -- 0
-substring$ -- 228
-swap$ -- 30
+substring$ -- 332
+swap$ -- 40
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
-warning$ -- 4
-while$ -- 48
+type$ -- 150
+warning$ -- 9
+while$ -- 62
 width$ -- 0
-write$ -- 431
-(There were 59 error messages)
+write$ -- 569
+(There were 74 error messages)

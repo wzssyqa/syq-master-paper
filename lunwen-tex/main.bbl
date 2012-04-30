@@ -1,19 +1,9 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Hyvärinen~等(2001)]{AAPO01}
-HYVäRINEN A, KARHUNEN J, OJA E.
-\newblock Independent Component Analysis[M].
-\newblock U.S.: John Wiley \& Sons, Inc., 2001.
-
-\bibitem[WikiPedia(2006)]{PEARSON}
-WIKIPEDIA.
-\newblock 相关[M].
-\newblock WikiPedia: http://zh.wikipedia.org/wiki/相关, 2006.
 
 \bibitem[黄声享~等(2006)]{DEFORM03}
 黄声享, 尹晖, 蒋征.
@@ -53,14 +43,6 @@ RIEKE-ZAPP D, TECKLENBURG W, PEIPE J,等.
   parameterisation[J].
 \newblock ISPRS Journal of Photogrammetry and Remote Sensing, 2009, 64(3):248
   -- 258.
-\newblock \url{http://dx.doi.org/10.1016/j.isprsjprs.2008.09.010}.
-\newblock Absolute length measurements;Accuracy assessment;Calibration
-  procedures;Calibration process;Camera calibration;Close-range
-  photogrammetries;Geometric instabilities;Geometric stability;Image
-  invariants;Interior orientations;Measuring systems;Mechanical
-  fixations;Object spaces;Parameter models;Parameterisation;Sensor
-  domains;Small groups;Software products;Stabilisation;Standard
-  calibrations;Standard methods;.
 
 \bibitem[刘大文和吴鹏举(2010)]{LIU-WU-LEVEL}
 刘大文, 吴鹏举.
@@ -78,6 +60,21 @@ RIEKE-ZAPP D, TECKLENBURG W, PEIPE J,等.
 林勤.
 \newblock 水口大坝液体静力水准监测系统改造及运行情况[J].
 \newblock 大坝观测与土工测试, 2001, 25:2.
+
+\bibitem[曹诗荣(2010)]{DAQ-ND}
+曹诗荣.
+\newblock 大型桥梁挠度变形监测方法的分析[J].
+\newblock 地理空间信息, 2010(8):137--139.
+
+\bibitem[程琳和徐波(2010)]{HUADONG-CEWEI}
+程琳, 徐波.
+\newblock 滑动测微计监测资料的时空分析[J].
+\newblock 地下空间与工程学报, 2010, 6(z1):1491--1494.
+
+\bibitem[杨立志 et al.(2011)]{ZHD-SEN}
+杨立志, 杨学山, 匙庆磊, et al.
+\newblock 基于大阻尼比的双输出振动传感器[J].
+\newblock 振动与冲击, 2011, 30(11):25--29.
 
 \bibitem[胡勇~等(2004)]{HUWHH-SCANNER}
 胡勇, 王从军, 韩明,等.
@@ -111,6 +108,42 @@ ADAM C.
 \newblock A Comparison of Different Approaches into the Analysis of Deformation
   Measurements[J].
 \newblock FIG-XVI Congress, 1981(8):602.
+
+\bibitem[Croux and Dehon(2001)]{CJS:CJS473}
+CROUX C, DEHON C.
+\newblock Robust linear discriminant analysis using S-estimators[J].
+\newblock Canadian Journal of Statistics, 2001, 29(3):473--493.
+\newblock \url{http://dx.doi.org/10.2307/3316042}.
+
+\bibitem[周江文 and 欧吉坤(1984)]{ZHOUJW-Outlier}
+周江文, 欧吉坤.
+\newblock 拟稳点的更换——兼论自由网平差若干问题[J].
+\newblock 测绘学报, 1984(03).
+
+\bibitem[Baarda(1968)]{BAARDA-DETECT}
+BAARDA W.
+\newblock A Testing Procedure for Use in Geodetic Networks[J].
+\newblock Netherlands Geodetic Commission, Publications on Geodesy, 1968, 2(5).
+
+\bibitem[李德仁(1984)]{LIDEREN-Outlier}
+李德仁.
+\newblock 利用选择权迭代法进行粗差定位[J].
+\newblock 武汉测绘科技大学学报, 1984(1).
+
+\bibitem[黄幼才(1993)]{HYOUC-Outlier}
+黄幼才.
+\newblock 抗差估计理论综述[J].
+\newblock 测绘工程, 1993(1).
+
+\bibitem[陶本藻 et al.(2004)]{TAO-Outlier}
+陶本藻, 姚宜斌, 施闯.
+\newblock 基于相关分析的粗差可区分性[J].
+\newblock 武汉大学学报(信息科学版), 2004, 29(10).
+
+\bibitem[陈永奇(1988)]{CHYQ-OBV}
+陈永奇.
+\newblock 变形观测数据处理[M].
+\newblock 北京: 测绘出版社, 1988.
 
 \bibitem[Wu和Wu(2002)]{2002287011810}
 WU C~S, WU A~Y~A.
@@ -183,5 +216,16 @@ PARK H~M, OH S~H, LEE S~Y.
   analysis[J].
 \newblock Proceedings of 2003 International Conference on Neural Networks and
   Signal Processing, ICNNSP'03, 2003, 2:1354 -- 1357.
+
+\bibitem[Hyvärinen~等(2001)]{AAPO01}
+HYVäRINEN A, KARHUNEN J, OJA E.
+\newblock Independent Component Analysis[M].
+\newblock U.S.: John Wiley \& Sons, Inc., 2001.
+
+\bibitem[WikiPedia()]{PEARSON}
+WIKIPEDIA.
+\newblock
+\newblock 相关[EB/OL].
+\newblock \url{http://zh.wikipedia.org/wiki/相关}.
 
 \end{thebibliography}
