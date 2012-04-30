@@ -52,6 +52,12 @@ You can't pop an empty literal stack for entry LIU-WU-LEVEL
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LIU-WU-LEVEL
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry BJ-ELEC
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry BJ-ELEC
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry SH-HLS
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry HE-XIAOYE-STATIC
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LINQIN-STATIC
@@ -140,56 +146,71 @@ You can't pop an empty literal stack for entry BULKER-WALL
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry BULKER-WALL
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You can't pop an empty literal stack for entry BSS06
+Warning--empty author and editor in Wiki-ICA
+You can't pop an empty literal stack for entry Wiki-ICA
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You can't pop an empty literal stack for entry OVERSAMPLED-ICA
+Warning--empty publisher in Wiki-ICA
+You can't pop an empty literal stack for entry Wiki-ICA
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry AAPO01
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry BSS06
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry ICA-FANGCHAN
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry ICA-PALM
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry ICA-SAR
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--empty author and editor in PEARSON
 You can't pop an empty literal stack for entry PEARSON
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 Warning--empty publisher in PEARSON
 You can't pop an empty literal stack for entry PEARSON
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You've used 40 entries,
+You can't pop an empty literal stack for entry DJL-GREY
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry OVERSAMPLED-ICA
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You've used 47 entries,
             6753 wiz_defined-function locations,
-            1456 strings with 14521 characters,
-and the built_in function-call counts, 12718 in all, are:
-= -- 1127
-> -- 438
-< -- 19
-+ -- 244
-- -- 102
-* -- 849
-:= -- 1873
-add.period$ -- 126
-call.type$ -- 40
-change.case$ -- 80
-chr.to.int$ -- 40
-cite$ -- 49
-duplicate$ -- 642
-empty$ -- 1517
-format.name$ -- 190
-if$ -- 3013
+            1497 strings with 15427 characters,
+and the built_in function-call counts, 14970 in all, are:
+= -- 1329
+> -- 495
+< -- 22
++ -- 279
+- -- 115
+* -- 1021
+:= -- 2178
+add.period$ -- 147
+call.type$ -- 47
+change.case$ -- 92
+chr.to.int$ -- 47
+cite$ -- 61
+duplicate$ -- 754
+empty$ -- 1803
+format.name$ -- 219
+if$ -- 3554
 int.to.chr$ -- 1
-int.to.str$ -- 41
-missing$ -- 46
-newline$ -- 214
-num.names$ -- 80
-pop$ -- 284
+int.to.str$ -- 48
+missing$ -- 53
+newline$ -- 249
+num.names$ -- 90
+pop$ -- 338
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 47
 quote$ -- 0
-skip$ -- 500
+skip$ -- 579
 stack$ -- 0
-substring$ -- 332
-swap$ -- 40
+substring$ -- 432
+swap$ -- 47
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
-warning$ -- 9
-while$ -- 62
+type$ -- 176
+warning$ -- 12
+while$ -- 71
 width$ -- 0
-write$ -- 569
-(There were 74 error messages)
+write$ -- 663
+(There were 83 error messages)

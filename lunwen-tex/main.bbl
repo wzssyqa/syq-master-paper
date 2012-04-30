@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -50,6 +50,18 @@ RIEKE-ZAPP D, TECKLENBURG W, PEIPE J,等.
 \newblock
   利用连续倒垂线加双金属标代替正垂线及高程传递仪的探讨[C]//全国大坝安全监测技术信息网第七届全网大会暨2010年学术交流研讨会论文集.
 \newblock .[出版地不详]：[出版者不详], 2010.
+
+\bibitem[谢人仪 et al.(1987)]{BJ-ELEC}
+谢人仪, 陈凯翎, 杜为民.
+\newblock
+\newblock
+  北京正负电子对撞机工程中的静力水准测量系统[C]//中国测绘学会全国特种精密工程测量会议.
+\newblock 武汉: [s.n.] , 1987.
+
+\bibitem[何晓业 and 吴军(2008)]{SH-HLS}
+何晓业, 吴军.
+\newblock 上海光源HLS系统技术方案[J].
+\newblock 中国物理C(英文版), 2008, 32(z1):62--64.
 
 \bibitem[何晓业~等(2007)]{HE-XIAOYE-STATIC}
 何晓业, 黄开席, 陈森玉,等.
@@ -205,10 +217,46 @@ NIE C~Y, WANG Z~W, YI-SHENG L,等.
 \newblock 圆形煤仓仓壁的设计[J].
 \newblock 中国新技术新产品, 2011.
 
+\bibitem[Wik()]{Wiki-ICA}
+
+\newblock 独立成分分析[EB/OL].
+\newblock
+  \url{http://zh.wikipedia.org/wiki/\%E7\%8B\%AC\%E7\%AB\%8B\%E6\%88\%90\%E5\%88\%86\%E5\%88\%86\%E6\%9E\%90}.
+
+\bibitem[Hyvärinen~等(2001)]{AAPO01}
+HYVäRINEN A, KARHUNEN J, OJA E.
+\newblock Independent Component Analysis[M].
+\newblock U.S.: John Wiley \& Sons, Inc., 2001.
+
 \bibitem[张发启~等(2006)]{BSS06}
 张发启, 张斌, 张喜斌.
 \newblock 盲信号处理及应用[M].
 \newblock 西安: 西安电子科技大学出版社, 2006.
+
+\bibitem[戴呼合 and 姜守达(2011)]{ICA-FANGCHAN}
+戴呼合, 姜守达.
+\newblock 基于ICA和小波变换的房颤F波提取算法[J].
+\newblock 仪器仪表学报, 2011, 32(8):1716--1723.
+
+\bibitem[戴桂平 and 尚丽(2011)]{ICA-PALM}
+戴桂平, 尚丽.
+\newblock 应用二维EMD和独立成分分析的掌纹识别[J].
+\newblock 计算机工程与应用, 2011, 47(19):182--185.
+
+\bibitem[张中山 et al.(2011)]{ICA-SAR}
+张中山, 余洁, 燕琴, et al.
+\newblock 基于核独立成分分析的极化SAR图像相干斑抑制[J].
+\newblock 测绘学报, 2011, 40(3):182--185.
+
+\bibitem[PEA()]{PEARSON}
+
+\newblock 相关[EB/OL].
+\newblock \url{http://zh.wikipedia.org/wiki/\%E7\%9B\%B8\%E5\%85\%B3}.
+
+\bibitem[邓聚龙(2002)]{DJL-GREY}
+邓聚龙.
+\newblock 灰理论基础[M].
+\newblock 武汉: 华中科技大学出版社, 2002.
 
 \bibitem[Park~等(2003)]{OVERSAMPLED-ICA}
 PARK H~M, OH S~H, LEE S~Y.
@@ -216,16 +264,5 @@ PARK H~M, OH S~H, LEE S~Y.
   analysis[J].
 \newblock Proceedings of 2003 International Conference on Neural Networks and
   Signal Processing, ICNNSP'03, 2003, 2:1354 -- 1357.
-
-\bibitem[Hyvärinen~等(2001)]{AAPO01}
-HYVäRINEN A, KARHUNEN J, OJA E.
-\newblock Independent Component Analysis[M].
-\newblock U.S.: John Wiley \& Sons, Inc., 2001.
-
-\bibitem[WikiPedia()]{PEARSON}
-WIKIPEDIA.
-\newblock
-\newblock 相关[EB/OL].
-\newblock \url{http://zh.wikipedia.org/wiki/相关}.
 
 \end{thebibliography}
