@@ -172,45 +172,65 @@ You can't pop an empty literal stack for entry DJL-GREY
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry OVERSAMPLED-ICA
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You've used 47 entries,
+You can't pop an empty literal stack for entry Gardner_1980
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry LII-MR
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry Platt92networksfor
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry Platt92networksfor
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry Platt92networksfor
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--empty publisher in Lee97independentcomponent
+You can't pop an empty literal stack for entry Lee97independentcomponent
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry Lambert96multichannelblind
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry FastICA-Sound
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--empty publisher in FastICA-Sound
+You can't pop an empty literal stack for entry FastICA-Sound
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You've used 53 entries,
             6753 wiz_defined-function locations,
-            1497 strings with 15427 characters,
-and the built_in function-call counts, 14970 in all, are:
-= -- 1329
-> -- 495
-< -- 22
-+ -- 279
-- -- 115
-* -- 1021
-:= -- 2178
-add.period$ -- 147
-call.type$ -- 47
-change.case$ -- 92
-chr.to.int$ -- 47
-cite$ -- 61
-duplicate$ -- 754
-empty$ -- 1803
-format.name$ -- 219
-if$ -- 3554
+            1537 strings with 16746 characters,
+and the built_in function-call counts, 16861 in all, are:
+= -- 1503
+> -- 555
+< -- 26
++ -- 313
+- -- 129
+* -- 1148
+:= -- 2453
+add.period$ -- 170
+call.type$ -- 53
+change.case$ -- 104
+chr.to.int$ -- 53
+cite$ -- 69
+duplicate$ -- 844
+empty$ -- 2025
+format.name$ -- 247
+if$ -- 4002
 int.to.chr$ -- 1
-int.to.str$ -- 48
-missing$ -- 53
-newline$ -- 249
-num.names$ -- 90
-pop$ -- 338
+int.to.str$ -- 54
+missing$ -- 62
+newline$ -- 284
+num.names$ -- 102
+pop$ -- 380
 preamble$ -- 1
-purify$ -- 47
+purify$ -- 53
 quote$ -- 0
-skip$ -- 579
+skip$ -- 644
 stack$ -- 0
-substring$ -- 432
-swap$ -- 47
+substring$ -- 490
+swap$ -- 53
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 176
-warning$ -- 12
-while$ -- 71
+type$ -- 200
+warning$ -- 14
+while$ -- 80
 width$ -- 0
-write$ -- 663
-(There were 83 error messages)
+write$ -- 749
+(There were 92 error messages)

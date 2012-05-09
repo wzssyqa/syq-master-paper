@@ -72,7 +72,7 @@
 如果第二级控制网发生了变化，要及时采取对控制点进行加固、布设新的控制点、
 对控制点高程加常数等措施进行处理，并考虑修正前期煤仓沉降观测值。
 
-(***)国家及行业有关规范标准均规定,
+国家及行业有关规范标准均规定,
 沉降观测点的布设应结合地质情况及建筑物结构特点，
 以能全面反映建筑物地基变形特征来确定。
 从平面设置考虑, 沉降观测点一般布设在建筑物的四角、转角、
@@ -124,29 +124,23 @@ $M_W$     	 &  1.0      & 2.0    \\
 \begin{center}
 \bicaption{表}{视线和重复测量要求(***)}
 			{Table.}{Line of sight and repeated measurements}
+\includegraphics[scale=0.5]{level2requirement2.jpeg}
 \end{center}
 \end{table}
 
-\begin{figure}[!htbp]
+\begin{table}[!htbp]
    \centering
-   \includegraphics[scale=0.5]{level2requirement2.jpeg}
-   \bicaption[figure:line-of-sight]{视线和重复测量要求}{视线和重复测量要求}
-						{Fig.}{Line of sight and repeated measurements}
-\end{figure}
-
-\begin{figure}[!htbp]
-   \centering
+   \bicaption[figure:b-a-part]{表}{基辅分划读数限差***}
+			{Fig.}{Basic and auxiliary partition}
    \includegraphics[scale=0.5]{level2requirement3.jpeg}
-   \bicaption[figure:b-a-part]{基辅分划读数限差}{基辅分划读数限差}
-								{Fig.}{Basic and auxiliary partition}
-\end{figure}
+\end{table}
 
-\begin{figure}[!htbp]
+\begin{table}[!htbp]
    \centering
-   \includegraphics[scale=0.5]{level2requirement4.jpeg}
-   \bicaption[figure:go-return]{往返高差不符值、环闭合差、检测高差之差的要求}{往返高差不符值、环闭合差、检测高差之差的要求}
+   \bicaption[figure:go-return]{表}{往返高差不符值、环闭合差、检测高差之差的要求***}
 			{Fig.}{Difference of going and forth, Misclosure, Check}
-\end{figure}
+   \includegraphics[scale=0.5]{level2requirement4.jpeg}
+\end{table}
 
 \subsection{预警处理}
 当煤仓观测过程中沉降值或者沉降速率超出预警值或者发现煤仓出现倾斜时，
@@ -183,7 +177,7 @@ $M_W$     	 &  1.0      & 2.0    \\
 其格式为：第一行是观测日期，从第二行起是煤仓上各沉降点的高程观测值。(\ref{figure:4-level})
 \begin{figure}[!htbp]
    \centering
-   \includegraphics[scale=0.5]{4-level-csv.png}
+   \includegraphics[scale=0.6]{4-level-csv.png}
    \bicaption[figure:4-level]{高程值数据文件格式}{高程值数据文件格式}
 			{Fig.}{Format of text-database for leveling}
 \end{figure}
@@ -244,21 +238,13 @@ $M_W$     	 &  1.0      & 2.0    \\
 \end{figure}
 
 沉降曲线图，横轴为从开始测量至最后一次测量的天数；
-纵轴正方向为装载量，负方向为各点沉降量。(\ref{figure:plot-41}, \ref{figure:plot-42})
+纵轴正方向为装载量，负方向为各点沉降量。(\ref{figure:plot-41})
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.3]{41-plot.png}
    \bicaption[figure:plot-41]{一号末煤仓沉降曲线图}
 				    {一号末煤仓沉降曲线图}
 			{Fig.}{Curves for settlement fof Powder Bulker No.1}
-\end{figure}
-
-\begin{figure}[!htbp]
-   \centering
-   \includegraphics[scale=0.3]{42-plot.png}
-   \bicaption[figure:plot-42]{二号末煤仓沉降曲线图}
-				    {二号末煤仓沉降曲线图}
-			{Fig.}{Curves for settlement of Powder Bulker No.2}
 \end{figure}
 
 \section{FastICA}
@@ -329,8 +315,8 @@ fastica(x)
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.3]{41-ica-plot.png}
-   \bicaption[figure:plot-41-ica]{一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
-				    {一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
+   \bicaption[figure:plot-41-ica]
+                        {图}{一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像}
 			{Fig.}{Four IC, Loadage and Temperature for Powder Bulker No.1}
 \end{figure}
 
@@ -341,7 +327,7 @@ fastica(x)
    \centering
    \includegraphics[scale=0.3]{41-poped-ica-plot.png}
    \bicaption[figure:plot-41-ica-poped]
-			{}{一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像(去除初期数据之后)}
+			{图}{一号末煤仓使用FastICA后得到的四个独立分量及装载量、气温的图像(去除初期数据之后)}
 			{Fig.}{Four IC, Loadage and Temperature for Powder Bulker No.1 (Data before 120d removed)}
 \end{figure}
 
@@ -368,16 +354,16 @@ pca(x, input_dim=4, output_dim=3)
 以和可能的影响因素的个数相同。
 使用PCA对原始信号降维之后，再使用fastica函数获取独立分量。
 
-以下对PCA降维后获得的数据使用fastica之后，画出的图像。
+以下对PCA降维后获得的数据使用FastICA之后，画出的图像。
 观测值的图形见图(\ref{figure:plot-41-pca})
 
 %一号末煤仓使用PCA+FastICA后得到的四个独立分量及装载量、气温的图像：
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.3]{41-pca-plot.png}
-   \bicaption[figure:plot-41-pca]{一号末煤仓PCA降维后使用FastICA后得到的四个独立分量及装载量、气温的图像}
-				    {一号末煤仓使用PCA降维FastICA后得到的四个独立分量及装载量、气温的图像}
-			{Fig.}{Four IC(With PCA first), Loadage and Temperature for Powder Bulker No.1}
+   \bicaption[figure:plot-41-pca]
+                        {图}{一号末煤仓使用PCA降维FastICA后得到的三个独立分量及装载量、气温的图像}
+			{Fig.}{Three IC(With PCA first), Loadage and Temperature for Powder Bulker No.1}
 \end{figure}
 
 和直接使用FastICA时类似，将最初使用光学水准仪测量的数据去掉之后，
@@ -385,14 +371,14 @@ pca(x, input_dim=4, output_dim=3)
 \begin{figure}[!htbp]
    \centering
    \includegraphics[scale=0.3]{41-poped-pca-plot.png}
-   \bicaption[figure:plot-41-pca-poped]{一号末煤仓PCA降维后使用FastICA后得到的四个独立分量及装载量、气温的图像}
-				    {一号末煤仓使用PCA降维FastICA后得到的四个独立分量及装载量、气温的图像}
-			{Fig.}{Four IC(With PCA first), Loadage and Temperature for Powder Bulker No.1}
+   \bicaption[figure:plot-41-pca-poped]
+                        {图}{一号末煤仓使用PCA降维FastICA后得到的三个独立分量及装载量、气温的图像}
+			{Fig.}{Three IC(With PCA first), Loadage and Temperature for Powder Bulker No.1}
 \end{figure}
 
 
 \subsection{各影响因子与所得独立成分的关系}
-在根据fastica或者PCA之后的FastICA得到独立成分之后，
+在根据FastICA或者PCA之后的FastICA得到独立成分之后，
 为了评估各个独立成分与煤仓装载量、温度变化、经历时间的相互关系，
 同时采用Pearson相关系数、互信息、灰关联度作为度量。
 
@@ -401,24 +387,26 @@ pca(x, input_dim=4, output_dim=3)
 
 \subsection{对以上结果的分析}
 通过分析以上的图表，对比装煤量、当地平均气温、观测时间等信息，
-比较图中的四个分量，可以得出结论：\\
+比较图中的四个(或三个)分量，可以得出结论：\\
     1) 煤仓刚投入使用的时候，各分量变化比较混乱。\\
     2) 后期各分量与装载量、温度、时间的关系开始变得比较明显，
-	这可能是因为前期的沉降规律性较差，也有可能是因为能获得的数据比较短，
-	甚至没有达到一周年，结果显得比较混乱。\\
-    3) 如果去掉前期数据，只使用后期的数据，结果或许会变得比较好一些。\\
+	这可能是因为前期的沉降规律性较差，也有可能是因为所获数据较少：
+	相比语音分离等应用数据量要少很多。\\
+    3) 如果去掉前期数据，只使用后期(第120天及以后)的数据，结果明显变得更好一些。\\
     4) 虽然有以上的各个限制因素，但是还是可以很明显得看出装载量对沉降的影响最大，
 	而温度和时间并不特别明显。这也可以说明，煤仓是安全的。\\
     5) 从上边可以看出，互信息并没有给出特别有用的信息，
-	相对来说，还是相关系数可以更好地用来分析各种因素与各独立成分之间的关系。\\
+	相比而言，相关系数则可以更好地用来分析各种因素与各独立成分之间的关系。\\
 
 而从上面的表中，我们看到的是稍显混乱的各种因子：\\
   1)  其中互信息并不能给我们太多有用的结论，各个分量得到的结果往往非常接近。\\
   2)  灰关联度的数字本身并没有太大意义，重要的是它们的排序。 
       灰关联度存在的一个严重问题是，较强的负相关关系得到的值会比较弱的相关关系值小，
       这样，就无法判断具体的相关关系：经典的灰关联度不适用于对独立成分分析结果的分析。\\
-  3)  Pearson相关系数，可以给我们区分度比较大的结果，但是仍然稍显混乱，
-      某些分量同时与两个因素相关性较大。
+  3) Pearson相关系数，可以给我们区分度比较大的结果，但是仍然稍显混乱，
+      某些分量同时与两个因素相关性较大。\\
+  4） 初期数据质量存在问题，造成使用PCA降维后会出现溢出的现象(表中的nan)，而只使用后期
+      数据则不会有此问题。
 
 比较图的结果和表的结果，各种参数并只能给出整体的相关程度，
 这样就造成了前期不明显的结果对后期明显的结果产生了影响。

@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -264,5 +264,48 @@ PARK H~M, OH S~H, LEE S~Y.
   analysis[J].
 \newblock Proceedings of 2003 International Conference on Neural Networks and
   Signal Processing, ICNNSP'03, 2003, 2:1354 -- 1357.
+
+\bibitem[Gardner(1980)]{Gardner_1980}
+GARDNER W~A.
+\newblock A Unifying View of Second-Order Measures of Quality for Signal
+  Classification[J].
+\newblock IEEE Transactions on Communications, 1980, 28(6):807--816.
+\newblock
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1094735}.
+
+\bibitem[Lii and Rosenblatt(1993)]{LII-MR}
+LII K~S, ROSENBLATT M.
+\newblock Bispectra and phase of non-Gaussian linear processes[J].
+\newblock Journal of Theoretical Probability, 1993, 6:579--593.
+\newblock \url{http://dx.doi.org/10.1007/BF01066718}.
+\newblock 10.1007/BF01066718.
+
+\bibitem[Platt and Faggin(1992)]{Platt92networksfor}
+PLATT J~C, FAGGIN F.
+\newblock
+\newblock
+\newblock Networks for the separation of sources that are superimposed and
+  delayed[C]//Advances in Neural Information Processing Systems 4.[S.l.]:
+  Morgan-Kaufmann, 1992.
+
+\bibitem[won Lee et al.(1997)]{Lee97independentcomponent}
+WON LEE T, GIROLAMI M, SEJNOWSKI T~J, et al.
+\newblock
+\newblock Independent Component Analysis Using an Extended Infomax Algorithm
+  for Mixed Sub-Gaussian and Super-Gaussian
+  Sources[缺文献类型标志代码].
+
+\bibitem[Lambert et al.(1996)]{Lambert96multichannelblind}
+LAMBERT R~H, RUSSELL C, LAMBERT H, et al.
+\newblock
+\newblock Multichannel Blind Deconvolution: Fir Matrix Algebra And Separation
+  Of Multipath Mixtures[D].[S.l.]: University of Southern California, 1996.
+
+\bibitem[Endolith()]{FastICA-Sound}
+ENDOLITH.
+\newblock
+\newblock A simple FastICA example[EB/OL].
+\newblock
+  \url{http://www.endolith.com/wordpress/2009/11/22/a-simple-fastica-example/}.
 
 \end{thebibliography}
