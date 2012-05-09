@@ -30,6 +30,26 @@ format.conference.title is an unknown function---line 2622 of file GBT7714-2005N
 format.cconference.title is an unknown function---line 2657 of file GBT7714-2005NLang-UTF8.bst.bst
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: body/reference.bib
+You're missing a field name---line 20 of file body/reference.bib
+ : 
+ : %URL=http://www.frontiersin.org/Journal/Abstract.aspx?s=752&name=neuroinformatics&ART_DOI=10.3389/neuro.11.008.2008,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 390 of file body/reference.bib
+ : 
+ : %url = {http://dx.doi.org/10.2307/3316042},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 537 of file body/reference.bib
+ : 
+ : %url={http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1094735},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 556 of file body/reference.bib
+ : 
+ : %   url = {http://dx.doi.org/10.1007/BF01066718},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 You can't pop an empty literal stack for entry DEFORM03
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DEFOR07
@@ -85,6 +105,9 @@ Warning--there's a number but no volume in Chrzanowski-compare
 You can't pop an empty literal stack for entry Chrzanowski-compare
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry Chrzanowski-compare
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--empty year in CJS:CJS473
+You can't pop an empty literal stack for entry CJS:CJS473
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry CJS:CJS473
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
@@ -172,7 +195,15 @@ You can't pop an empty literal stack for entry DJL-GREY
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry OVERSAMPLED-ICA
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--empty author in Gardner_1980
+Warning--empty journal in Gardner_1980
+Warning--empty year in Gardner_1980
 You can't pop an empty literal stack for entry Gardner_1980
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry Gardner_1980
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--empty year in LII-MR
+You can't pop an empty literal stack for entry LII-MR
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LII-MR
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
@@ -182,7 +213,6 @@ You can't pop an empty literal stack for entry Platt92networksfor
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry Platt92networksfor
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-Warning--empty publisher in Lee97independentcomponent
 You can't pop an empty literal stack for entry Lee97independentcomponent
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry Lambert96multichannelblind
@@ -192,45 +222,53 @@ while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 Warning--empty publisher in FastICA-Sound
 You can't pop an empty literal stack for entry FastICA-Sound
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You've used 53 entries,
+Warning--empty author and editor in ERDENG
+You can't pop an empty literal stack for entry ERDENG
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+Warning--empty publisher in ERDENG
+You can't pop an empty literal stack for entry ERDENG
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry MDP
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You've used 55 entries,
             6753 wiz_defined-function locations,
-            1537 strings with 16746 characters,
-and the built_in function-call counts, 16861 in all, are:
-= -- 1503
-> -- 555
-< -- 26
-+ -- 313
-- -- 129
-* -- 1148
-:= -- 2453
-add.period$ -- 170
-call.type$ -- 53
-change.case$ -- 104
-chr.to.int$ -- 53
-cite$ -- 69
-duplicate$ -- 844
-empty$ -- 2025
-format.name$ -- 247
-if$ -- 4002
+            1542 strings with 16790 characters,
+and the built_in function-call counts, 17250 in all, are:
+= -- 1526
+> -- 568
+< -- 25
++ -- 323
+- -- 132
+* -- 1182
+:= -- 2502
+add.period$ -- 168
+call.type$ -- 55
+change.case$ -- 106
+chr.to.int$ -- 55
+cite$ -- 79
+duplicate$ -- 874
+empty$ -- 2079
+format.name$ -- 251
+if$ -- 4091
 int.to.chr$ -- 1
-int.to.str$ -- 54
-missing$ -- 62
-newline$ -- 284
+int.to.str$ -- 56
+missing$ -- 63
+newline$ -- 286
 num.names$ -- 102
-pop$ -- 380
+pop$ -- 404
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 55
 quote$ -- 0
-skip$ -- 644
+skip$ -- 668
 stack$ -- 0
-substring$ -- 490
-swap$ -- 53
+substring$ -- 474
+swap$ -- 55
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
-warning$ -- 14
-while$ -- 80
+type$ -- 208
+warning$ -- 20
+while$ -- 79
 width$ -- 0
-write$ -- 749
-(There were 92 error messages)
+write$ -- 762
+(There were 102 error messages)

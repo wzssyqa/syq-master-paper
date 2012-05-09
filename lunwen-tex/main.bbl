@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -49,14 +49,14 @@ RIEKE-ZAPP D, TECKLENBURG W, PEIPE J,等.
 \newblock
 \newblock
   利用连续倒垂线加双金属标代替正垂线及高程传递仪的探讨[C]//全国大坝安全监测技术信息网第七届全网大会暨2010年学术交流研讨会论文集.
-\newblock .[出版地不详]：[出版者不详], 2010.
+\newblock 昆明: 全国大坝安全监测技术信息网, 2010.
 
 \bibitem[谢人仪 et al.(1987)]{BJ-ELEC}
 谢人仪, 陈凯翎, 杜为民.
 \newblock
 \newblock
   北京正负电子对撞机工程中的静力水准测量系统[C]//中国测绘学会全国特种精密工程测量会议.
-\newblock 武汉: [s.n.] , 1987.
+\newblock 武汉: [s.n.] , 1987:6.
 
 \bibitem[何晓业 and 吴军(2008)]{SH-HLS}
 何晓业, 吴军.
@@ -121,11 +121,10 @@ ADAM C.
   Measurements[J].
 \newblock FIG-XVI Congress, 1981(8):602.
 
-\bibitem[Croux and Dehon(2001)]{CJS:CJS473}
+\bibitem[Croux and Dehon()]{CJS:CJS473}
 CROUX C, DEHON C.
 \newblock Robust linear discriminant analysis using S-estimators[J].
-\newblock Canadian Journal of Statistics, 2001, 29(3):473--493.
-\newblock \url{http://dx.doi.org/10.2307/3316042}.
+\newblock Canadian Journal of Statistics, 29(3).
 
 \bibitem[周江文 and 欧吉坤(1984)]{ZHOUJW-Outlier}
 周江文, 欧吉坤.
@@ -160,18 +159,16 @@ BAARDA W.
 \bibitem[Wu和Wu(2002)]{2002287011810}
 WU C~S, WU A~Y~A.
 \newblock A novel cost-effective multi-path adaptive interpolated FIR
-  (IFIR)-based echo canceller[C]//.
-\newblock Phoenix, AZ, United states:[出版者不详], 2002，第5卷:V/453 --
-  V/456.
-\newblock \url{http://dx.doi.org/10.1109/ISCAS.2002.1010738}.
-\newblock Echo canceller;Image compress filter;.
+  (IFIR)-based echo canceller[J].
+\newblock Proceedings - IEEE International Symposium on Circuits and Systems,
+  2002, 5:V/453 -- V/456.
 
 \bibitem[尹晖和张琰(1997)]{YINHUI-GREY}
 尹晖, 张琰.
 \newblock
 \newblock
   多因子关联分析模型及其同步预测的新方法[C]//'97工程测量综合性学术研讨会论文集.
-\newblock .[出版地不详]：[出版者不详], 1997.
+\newblock 武汉: 测绘科技大学地学测量工程学院, 1997.
 
 \bibitem[马丽霞~等(2009)]{MAWANG-BP}
 马丽霞, 王凤艳, 陈剑平.
@@ -265,20 +262,15 @@ PARK H~M, OH S~H, LEE S~Y.
 \newblock Proceedings of 2003 International Conference on Neural Networks and
   Signal Processing, ICNNSP'03, 2003, 2:1354 -- 1357.
 
-\bibitem[Gardner(1980)]{Gardner_1980}
-GARDNER W~A.
-\newblock A Unifying View of Second-Order Measures of Quality for Signal
-  Classification[J].
-\newblock IEEE Transactions on Communications, 1980, 28(6):807--816.
-\newblock
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1094735}.
+\bibitem[Gar()]{Gardner_1980}
 
-\bibitem[Lii and Rosenblatt(1993)]{LII-MR}
+\newblock A Unifying View of Second-Order Measures of Quality for Signal
+  Classification[J], 28.
+
+\bibitem[Lii and Rosenblatt()]{LII-MR}
 LII K~S, ROSENBLATT M.
 \newblock Bispectra and phase of non-Gaussian linear processes[J].
-\newblock Journal of Theoretical Probability, 1993, 6:579--593.
-\newblock \url{http://dx.doi.org/10.1007/BF01066718}.
-\newblock 10.1007/BF01066718.
+\newblock Journal of Theoretical Probability, 6(3):579--593.
 
 \bibitem[Platt and Faggin(1992)]{Platt92networksfor}
 PLATT J~C, FAGGIN F.
@@ -290,10 +282,9 @@ PLATT J~C, FAGGIN F.
 
 \bibitem[won Lee et al.(1997)]{Lee97independentcomponent}
 WON LEE T, GIROLAMI M, SEJNOWSKI T~J, et al.
-\newblock
 \newblock Independent Component Analysis Using an Extended Infomax Algorithm
-  for Mixed Sub-Gaussian and Super-Gaussian
-  Sources[缺文献类型标志代码].
+  for Mixed Sub-Gaussian and Super-Gaussian Sources[J].
+\newblock Neural Computation, 1997, 11(2):417--441.
 
 \bibitem[Lambert et al.(1996)]{Lambert96multichannelblind}
 LAMBERT R~H, RUSSELL C, LAMBERT H, et al.
@@ -307,5 +298,15 @@ ENDOLITH.
 \newblock A simple FastICA example[EB/OL].
 \newblock
   \url{http://www.endolith.com/wordpress/2009/11/22/a-simple-fastica-example/}.
+
+\bibitem[ERD()]{ERDENG}
+
+\newblock 国家一、二等水准测量规范 GB/T 12897-2006[S].
+
+\bibitem[Zito et al.(2009)]{MDP}
+ZITO T, WILBERT N, WISKOTT L, et al.
+\newblock Modular toolkit for Data Processing (MDP): a Python data processing
+  framework[J].
+\newblock Frontiers in Neuroinformatics, 2009, 2(00008).
 
 \end{thebibliography}
