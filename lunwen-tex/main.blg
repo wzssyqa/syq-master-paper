@@ -35,22 +35,24 @@ You're missing a field name---line 20 of file body/reference.bib
  : %URL=http://www.frontiersin.org/Journal/Abstract.aspx?s=752&name=neuroinformatics&ART_DOI=10.3389/neuro.11.008.2008,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 390 of file body/reference.bib
+You're missing a field name---line 408 of file body/reference.bib
  : 
  : %url = {http://dx.doi.org/10.2307/3316042},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 537 of file body/reference.bib
+You're missing a field name---line 555 of file body/reference.bib
  : 
  : %url={http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1094735},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 556 of file body/reference.bib
+You're missing a field name---line 574 of file body/reference.bib
  : 
  : %   url = {http://dx.doi.org/10.1007/BF01066718},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 You can't pop an empty literal stack for entry DEFORM03
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry HSX-PHD
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DEFOR07
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
@@ -158,11 +160,6 @@ You can't pop an empty literal stack for entry GEHEYAN
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry GEHEYAN
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-Warning--there's a number but no volume in DAM-K-BASE
-You can't pop an empty literal stack for entry DAM-K-BASE
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You can't pop an empty literal stack for entry DAM-K-BASE
-while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry DENOISING-WAVELET
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry BULKER-WALL
@@ -207,6 +204,8 @@ You can't pop an empty literal stack for entry LII-MR
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry LII-MR
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
+You can't pop an empty literal stack for entry SDU-BSS
+while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry Platt92networksfor
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry Platt92networksfor
@@ -230,45 +229,45 @@ You can't pop an empty literal stack for entry ERDENG
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
 You can't pop an empty literal stack for entry MDP
 while executing---line 3560 of file GBT7714-2005NLang-UTF8.bst.bst
-You've used 55 entries,
+You've used 56 entries,
             6753 wiz_defined-function locations,
-            1542 strings with 16790 characters,
-and the built_in function-call counts, 17250 in all, are:
-= -- 1526
-> -- 568
-< -- 25
-+ -- 323
-- -- 132
-* -- 1182
-:= -- 2502
-add.period$ -- 168
-call.type$ -- 55
-change.case$ -- 106
-chr.to.int$ -- 55
+            1549 strings with 16871 characters,
+and the built_in function-call counts, 17533 in all, are:
+= -- 1555
+> -- 572
+< -- 26
++ -- 326
+- -- 133
+* -- 1196
+:= -- 2545
+add.period$ -- 171
+call.type$ -- 56
+change.case$ -- 108
+chr.to.int$ -- 56
 cite$ -- 79
-duplicate$ -- 874
-empty$ -- 2079
-format.name$ -- 251
-if$ -- 4091
+duplicate$ -- 887
+empty$ -- 2114
+format.name$ -- 253
+if$ -- 4161
 int.to.chr$ -- 1
-int.to.str$ -- 56
-missing$ -- 63
-newline$ -- 286
-num.names$ -- 102
-pop$ -- 404
+int.to.str$ -- 57
+missing$ -- 65
+newline$ -- 291
+num.names$ -- 104
+pop$ -- 411
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 56
 quote$ -- 0
-skip$ -- 668
+skip$ -- 674
 stack$ -- 0
-substring$ -- 474
-swap$ -- 55
+substring$ -- 494
+swap$ -- 56
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 208
-warning$ -- 20
-while$ -- 79
+type$ -- 212
+warning$ -- 19
+while$ -- 80
 width$ -- 0
-write$ -- 762
+write$ -- 774
 (There were 102 error messages)

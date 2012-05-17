@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,13 @@
 黄声享, 尹晖, 蒋征.
 \newblock 变形监测数据处理[M].
 \newblock 武汉: 武汉大学出版社, 2006.
+
+\bibitem[黄声享(2001)]{HSX-PHD}
+黄声享.
+\newblock
+\newblock
+  变形数据分析方法研究及其在精密工程GPS自动监测系统中的应用[D].[S.l.]:
+  武汉大学, 2001.
 
 \bibitem[张正禄~等(2007)]{DEFOR07}
 张正禄, 黄全义, 文鸿雁,等.
@@ -196,12 +203,6 @@ WU C~S, WU A~Y~A.
 \newblock 隔河岩大坝外观变形数据的处理和分析[J].
 \newblock 武汉测绘科技大学学报, 2000(6):3.
 
-\bibitem[岳建平 and 雷伟刚(2001)]{DAM-K-BASE}
-岳建平, 雷伟刚.
-\newblock
-  基于规则与人工神经网络的大坝安全监控混合知识库研究[J].
-\newblock 水利学报, 2001(5):4.
-
 \bibitem[Nie~等(2010)]{DENOISING-WAVELET}
 NIE C~Y, WANG Z~W, YI-SHENG L,等.
 \newblock Research about non-stationary properties and de-noising of chaos
@@ -271,6 +272,11 @@ PARK H~M, OH S~H, LEE S~Y.
 LII K~S, ROSENBLATT M.
 \newblock Bispectra and phase of non-Gaussian linear processes[J].
 \newblock Journal of Theoretical Probability, 6(3):579--593.
+
+\bibitem[刘琚和何振亚(2002)]{SDU-BSS}
+刘琚, 何振亚.
+\newblock 盲源分离和盲反卷积[J].
+\newblock 电子学报, 2002, 30:570--576.
 
 \bibitem[Platt and Faggin(1992)]{Platt92networksfor}
 PLATT J~C, FAGGIN F.
